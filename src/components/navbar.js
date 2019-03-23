@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 import navbarStyles from "./navbar.module.css"
 
 const ListLink = props => (
@@ -9,13 +9,32 @@ const ListLink = props => (
 )
 
 export default () => (
-  <nav className={navbarStyles.navbar}>
-    <ul className={navbarStyles.allLinks}>
-      <ListLink to="/">Home</ListLink>
-      <ListLink to="/about">About</ListLink>
-      <ListLink to="/projects">Projects</ListLink>
-      <ListLink to="/contact">Contact</ListLink>
-      <ListLink to="/blog">Blog</ListLink>
-    </ul>
-  </nav>
+  <StaticQuery
+    query={graphql`
+      query {
+        site {
+          siteMetadata {
+            menuLinks {
+              name
+              link
+            }
+          }
+        }
+      }
+    `}
+    render={data => (
+      <nav className={navbarStyles.navbar}>
+        <ul className={navbarStyles.allLinks}>
+          {data.site.siteMetadata.menuLinks.map(link => (
+            <ListLink to={link.link}>{link.name}</ListLink>
+          ))}
+          {/* <ListLink to="/">Home</ListLink>
+          <ListLink to="/about">About</ListLink>
+          <ListLink to="/projects">Projects</ListLink>
+          <ListLink to="/contact">Contact</ListLink>
+          <ListLink to="/blog">Blog</ListLink> */}
+        </ul>
+      </nav>
+    )}
+  />
 )
