@@ -1,0 +1,17 @@
+.contactContent a {
+  text-decoration: underline;
+  text-decoration-color: var(--stuGreen);
+}
+
+/* .contactContent a:hover {
+  text-decoration-color: black;
+} */
+
+.contactContent h2 {
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+.contactContent {
+  text-align: center;
+}

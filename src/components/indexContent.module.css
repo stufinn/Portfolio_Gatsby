@@ -1,0 +1,11 @@
+.indexContent {
+  grid-area: main;
+}
+
+h3 {
+  padding-top: 30px;
+}
+
+p {
+  padding-top: 10px;
+}

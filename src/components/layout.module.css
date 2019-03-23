@@ -1,0 +1,15 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-template-areas: "main sidebar";
+  padding: 40px 0 0 90px;
+}
+
+.mainContent {
+  grid-area: main;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "header"
+    "content";
+}

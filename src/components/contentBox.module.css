@@ -1,0 +1,5 @@
+.contentBox {
+  margin-top: 40px;
+  grid-area: content;
+  width: 95%;
+}

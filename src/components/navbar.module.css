@@ -1,0 +1,19 @@
+.navbar {
+  grid-area: "sidebar";
+  /* position: static; */
+}
+
+.allLinks {
+  margin: 50px 0 0 15px;
+  padding: 10px 0 10px 10px;
+  border-left: 2px solid var(--stuGreen);
+}
+
+li {
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+li:first-child {
+  margin-top: 0;
+}
