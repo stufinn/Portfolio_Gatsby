@@ -43,8 +43,6 @@ module.exports = {
       },
     },
     "gatsby-plugin-offline",
-    {
-      plugins: [`gatsby-plugin-react-helmet`],
-    },
+    `gatsby-plugin-react-helmet`,
   ],
 }
