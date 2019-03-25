@@ -16,3 +16,27 @@
   /* margin-left: 100px; */
   justify-self: center;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 800px) {
+  .header {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+  }
+
+  .headerText {
+    display: grid;
+    /* justify-t: center; */
+    text-align: center;
+  }
+
+  .headLine {
+    justify-self: center;
+  }
+
+  .stuImg {
+    margin-top: 25px;
+  }
+}

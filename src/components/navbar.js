@@ -32,11 +32,6 @@ export default () => (
               {link.name}
             </ListLink>
           ))}
-          {/* <ListLink to="/">Home</ListLink>
-          <ListLink to="/about">About</ListLink>
-          <ListLink to="/projects">Projects</ListLink>
-          <ListLink to="/contact">Contact</ListLink>
-          <ListLink to="/blog">Blog</ListLink> */}
         </ul>
       </nav>
     )}
