@@ -17,3 +17,10 @@ li {
 li:first-child {
   margin-top: 0;
 }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 800px) {
+  .navbar {
+    display: none;
+  }
+}
