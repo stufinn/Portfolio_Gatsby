@@ -30,5 +30,18 @@ module.exports = {
     },
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Stu Finn",
+        short_name: "stufinn",
+        start_url: "/",
+        background_color: "#ffffff",
+        theme_color: "ffffff",
+        display: "standalone",
+        icon: "src/images/icon.png",
+      },
+    },
+    "gatsby-plugin-offline",
   ],
 }

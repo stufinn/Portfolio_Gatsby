@@ -8,7 +8,7 @@ export default ({ children }) => (
   <div className={layoutStyles.layout}>
     <div className={layoutStyles.mainContent}>
       <Header />
-      <ContentBox className={layoutStyles.contentStuff}>{children}</ContentBox>
+      <ContentBox>{children}</ContentBox>
     </div>
     <Navbar />
   </div>

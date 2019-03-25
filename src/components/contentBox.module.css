@@ -3,3 +3,9 @@
   grid-area: content;
   width: 95%;
 }
+
+@media screen and (max-width: 800px) {
+  .contentBox {
+    width: 100%;
+  }
+}
