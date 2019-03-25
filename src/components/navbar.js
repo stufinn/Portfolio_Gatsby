@@ -26,7 +26,11 @@ export default () => (
       <nav className={navbarStyles.navbar}>
         <ul className={navbarStyles.allLinks}>
           {data.site.siteMetadata.menuLinks.map(link => (
-            <ListLink to={link.link}>{link.name}</ListLink>
+            <ListLink to={link.link} key={link.name}>
+              {" "}
+              {/*  Give better key */}
+              {link.name}
+            </ListLink>
           ))}
           {/* <ListLink to="/">Home</ListLink>
           <ListLink to="/about">About</ListLink>
