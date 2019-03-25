@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import headerStyles from "./header.module.css"
+import stuImg from "../images/stuPic.jpg"
 
 export default () => (
   <StaticQuery
@@ -22,6 +23,7 @@ export default () => (
           <div className={headerStyles.headLine} />
           <h2 className={headerStyles.subTitle}>Web design & development</h2>
         </div>
+        <img src={stuImg} alt="Stu Finn" className={headerStyles.stuImg} />
       </div>
     )}
   />
