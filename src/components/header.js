@@ -2,7 +2,6 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import headerStyles from "./header.module.css"
 import Img from "gatsby-image"
-// import stuImg from "../images/stuPic.jpg"
 
 export default () => (
   <StaticQuery
@@ -32,10 +31,15 @@ export default () => (
           <h2 className={headerStyles.subTitle}>Web design & development</h2>
         </div>
         {/* <img src={stuImg} alt="Stu Finn" className={headerStyles.stuImg} /> */}
+
+        {/* <div style={imgStyle} /> */}
         <Img
+          style={{
+            borderRadius: "50%",
+            justifySelf: "center",
+          }}
           fixed={data.stuPic.childImageSharp.fixed}
           alt=""
-          className={headerStyles.stuImg}
         />
       </div>
     )}
