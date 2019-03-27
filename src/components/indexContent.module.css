@@ -1,5 +1,6 @@
 .indexContent {
   grid-area: main;
+  text-align: center;
 }
 
 h3 {
@@ -14,4 +15,17 @@ p {
   .indexContent {
     text-align: center;
   }
+}
+
+.statement {
+  padding-bottom: 30px;
+}
+
+.statement:last-child {
+  padding-bottom: 0;
+}
+
+.statement span {
+  color: var(--stuGreen);
+  font-size: 1.5em;
 }

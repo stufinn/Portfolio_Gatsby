@@ -6,10 +6,10 @@ import ContentBox from "./contentBox"
 
 export default ({ children }) => (
   <div className={layoutStyles.layout}>
-    <div className={layoutStyles.mainContent}>
-      <Header />
-      <ContentBox>{children}</ContentBox>
-    </div>
+    {/* <div className={layoutStyles.mainContent}> */}
+    <Header />
+    <ContentBox>{children}</ContentBox>
+    {/* </div> */}
     <Navbar />
   </div>
 )

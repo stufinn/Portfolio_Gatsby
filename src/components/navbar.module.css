@@ -1,5 +1,5 @@
 .navbar {
-  grid-area: "sidebar";
+  grid-area: "navbar";
   /* position: static; */
 }
 
