@@ -134,6 +134,7 @@ table {
 
 :root {
   --stuGreen: #35cb70;
+  --stuGreenRGB: 53,230,112;
   font-family: "Roboto Slab", serif;
   font-weight: 400;
   box-sizing: border-box;

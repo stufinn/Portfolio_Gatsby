@@ -1,0 +1,54 @@
+.linkButton {
+  border: 2px solid var(--stuGreen);
+  position: relative;
+  font-size: 2em;
+  font-family: "Roboto Slab", serif;
+  justify-self: center;
+  padding: 10px;
+  background-color: white;
+  z-index: 10;
+}
+
+.linkButton:hover {
+  cursor: pointer;
+  /* border-color: black; */
+  animation: fadeIn 0.35s linear forwards;
+  background-color: rgb(var(--stuGreenRGB), 0);
+  /* color: white; */
+}
+
+/* .linkButton:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--stuGreen);
+  opacity: 0;
+  animation: fadeIn 1s linear forwards;
+  z-index: -1;
+} */
+
+.linkButton:after:hover {
+
+}
+
+.linkButtonContainer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes fadeIn {
+ 0% {
+  background-color: rgb(var(--stuGreenRGB), 0);
+  color: black;
+ }
+ 100% {
+  background-color: rgb(var(--stuGreenRGB), 1);
+  color: white;
+ }
+}

@@ -2,6 +2,8 @@ import React from "react"
 import Helmet from "react-helmet"
 import Layout from "../components/layout"
 import IndexContent from "../components/indexContent"
+import LinkButton from "../components/linkButton"
+
 
 export default () => (
   <div>
@@ -12,6 +14,8 @@ export default () => (
 
     <Layout>
       <IndexContent />
+      <LinkButton buttonText="Get in touch!"></LinkButton>
     </Layout>
+
   </div>
 )
