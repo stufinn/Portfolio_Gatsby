@@ -4,6 +4,10 @@ import Layout from "../components/layout"
 import ProjectTile from "../components/projectTile"
 import projectStyles from "./projects.module.css"
 
+// const sayHi = () => {
+//   console.log("Hi!");
+// };
+
 export default () => (
   <div>
     <Helmet>
