@@ -1,19 +1,21 @@
 .linkButton {
-  border: 2px solid var(--stuGreen);
+  /* border: 2px solid rgb(var(--stuGreenRGB), 0.5); */
+  border: 0;
   position: relative;
   font-size: 2em;
   font-family: "Roboto Slab", serif;
   justify-self: center;
   padding: 10px;
-  background-color: white;
+  background-color: rgb(var(--stuGreenRGB), 0.9);
   z-index: 10;
+  border-radius: 20px;
 }
 
 .linkButton:hover {
   cursor: pointer;
   /* border-color: black; */
-  animation: fadeIn 0.35s linear forwards;
-  background-color: rgb(var(--stuGreenRGB), 0);
+  animation: fadeIn 0.2s linear forwards;
+  /* background-color: rgb(var(--stuGreenRGB), 0); */
   /* color: white; */
 }
 
@@ -32,9 +34,8 @@
   z-index: -1;
 } */
 
-.linkButton:after:hover {
-
-}
+/* .linkButton:after:hover {
+} */
 
 .linkButtonContainer {
   margin-top: 30px;
@@ -43,12 +44,12 @@
 }
 
 @keyframes fadeIn {
- 0% {
-  background-color: rgb(var(--stuGreenRGB), 0);
-  color: black;
- }
- 100% {
-  background-color: rgb(var(--stuGreenRGB), 1);
-  color: white;
- }
+  0% {
+    background-color: rgb(var(--stuGreenRGB), 0.9);
+    color: black;
+  }
+  100% {
+    background-color: rgb(var(--stuGreenRGB), 0.5);
+    /* color: white; */
+  }
 }

@@ -1,0 +1,20 @@
+.contactFormContainer {
+  /* justify-self: center; */
+  display: grid;
+  justify-items: center;
+  grid-row-gap: 10px;
+  margin-top: 20px;
+}
+
+.contactForm {
+  display: grid;
+  /* justify-items: center; */
+  grid-row-gap: 10px;
+  border: 1px dotted rgb(var(--stuGreenRGB));
+  padding: 15px;
+}
+
+.formField {
+  margin-bottom: 20px;
+  color: red;
+}
