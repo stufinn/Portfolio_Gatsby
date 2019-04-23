@@ -28,23 +28,29 @@ class ContactForm extends React.Component {
         >
           <input
             type="text"
-            placeholder="You name here"
+            placeholder="Your name here"
             name="name"
-            classname={contactFormStyles.formField}
+            className={contactFormStyles.formField}
             required
           />
-          <input type="email" placeholder="email address" name="email" />
+          <input
+            type="email"
+            placeholder="email address"
+            className={contactFormStyles.formField}
+            name="email"
+          />
 
           <textarea
             rows="4"
-            cols="50"
+            cols="30"
             name="message"
-            required="true"
             placeholder="Your message here"
-            classname={contactFormStyles.formField}
+            className={contactFormStyles.formField}
           />
 
-          <button type="submit">Send message</button>
+          <button type="submit" className={contactFormStyles.button}>
+            Send message
+          </button>
         </form>
       </div>
     )

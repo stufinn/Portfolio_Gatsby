@@ -14,8 +14,8 @@ export default () => (
       websites
     </p>
     {/* <h3>I can</h3> */}
-    <p className={indexStyles.statement}>
+    {/* <p className={indexStyles.statement}>
       <span>I can</span> help you with your next website
-    </p>
+    </p> */}
   </div>
 )

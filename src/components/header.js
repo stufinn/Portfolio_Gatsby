@@ -14,7 +14,7 @@ export default () => (
         }
         stuPic: file(relativePath: { eq: "images/stuPic.jpg" }) {
           childImageSharp {
-            fixed(grayscale: true, width: 200) {
+            fixed(width: 200) {
               ...GatsbyImageSharpFixed
             }
           }

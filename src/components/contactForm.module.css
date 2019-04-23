@@ -10,11 +10,27 @@
   display: grid;
   /* justify-items: center; */
   grid-row-gap: 10px;
-  border: 1px dotted rgb(var(--stuGreenRGB));
+  border: 5px solid var(--stuGreen);
   padding: 15px;
+  margin-bottom: 20px;
 }
 
 .formField {
-  margin-bottom: 20px;
-  color: red;
+  border: 1px solid var(--stuGreen);
+  font-family: "Roboto Slab", serif;
+  font-size: 0.75em;
+}
+
+.button {
+  font-family: "Roboto Slab", serif;
+  font-size: 1em;
+  background-color: var(--stuGreen);
+  border: solid 1px var(--stuGreen);
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: grey;
+  border: solid 1px grey;
 }

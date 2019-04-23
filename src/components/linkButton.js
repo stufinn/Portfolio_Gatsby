@@ -1,11 +1,7 @@
 import React from "react"
 import linkButtonStyles from "./linkButton.module.css"
-import ContactForm from "../components/contactForm"
-
-// const sayhi = console.log
-
-// const form = () => <p>Form Goes Here</p>
-// let showForm = false
+import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 class LinkButton extends React.Component {
   constructor(props) {
@@ -14,19 +10,15 @@ class LinkButton extends React.Component {
   }
 
   handleClick() {
-    this.props.handleShowForm()
-    this.props.handleHideSubmitMsg()
+    alert("Link to contact page!")
   }
 
   render() {
     return (
       <div className={linkButtonStyles.linkButtonContainer}>
-        <button
-          className={linkButtonStyles.linkButton}
-          onClick={this.handleClick}
-        >
+        <Link to="/contact" className={linkButtonStyles.linkButton}>
           {this.props.buttonText}
-        </button>
+        </Link>
       </div>
     )
   }

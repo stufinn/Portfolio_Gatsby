@@ -15,6 +15,7 @@
   cursor: pointer;
   /* border-color: black; */
   animation: fadeIn 0.2s linear forwards;
+  color: black;
   /* background-color: rgb(var(--stuGreenRGB), 0); */
   /* color: white; */
 }
