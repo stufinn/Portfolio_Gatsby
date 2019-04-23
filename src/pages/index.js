@@ -2,7 +2,6 @@ import React from "react"
 import Helmet from "react-helmet"
 import Layout from "../components/layout"
 import IndexContent from "../components/indexContent"
-import LinkButton from "../components/linkButton"
 
 // const sayHello = () =>
 
@@ -16,7 +15,6 @@ const Index = () => {
 
       <Layout>
         <IndexContent />
-        <LinkButton buttonText="Get in touch!" />
       </Layout>
     </div>
   )
