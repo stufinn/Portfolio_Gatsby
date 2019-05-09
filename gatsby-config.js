@@ -44,5 +44,11 @@ module.exports = {
     },
     "gatsby-plugin-offline",
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`${__dirname}/src/components/layout`),
+      },
+    },
   ],
 }

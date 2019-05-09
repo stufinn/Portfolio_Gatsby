@@ -1,6 +1,5 @@
 import React from "react"
 import Helmet from "react-helmet"
-import Layout from "../components/layout"
 
 export default () => (
   <div>
@@ -8,7 +7,7 @@ export default () => (
       {" "}
       <meta charSet="utf-8" /> <title>About</title>{" "}
     </Helmet>
-    <Layout>
+    <div>
       <h2>About Me</h2>
       <p>
         Bacon ipsum dolor amet short loin shank cow tri-tip, pastrami alcatra
@@ -22,6 +21,6 @@ export default () => (
         frankfurter pancetta ribeye tongue sausage picanha alcatra salami
         hamburger ground round.
       </p>
-    </Layout>
+    </div>
   </div>
 )

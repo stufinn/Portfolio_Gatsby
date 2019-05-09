@@ -1,6 +1,6 @@
 import React from "react"
 import Helmet from "react-helmet"
-import Layout from "../components/layout"
+
 import HomeContent from "../components/homeContent"
 
 // const sayHello = () =>
@@ -13,9 +13,9 @@ const Index = () => {
         <meta charSet="utf-8" /> <title>Stu Finn</title>{" "}
       </Helmet>
 
-      <Layout>
+      <div>
         <HomeContent />
-      </Layout>
+      </div>
     </div>
   )
 }

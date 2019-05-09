@@ -1,6 +1,6 @@
 import React from "react"
 import Helmet from "react-helmet"
-import Layout from "../components/layout"
+
 import contactStyles from "./contact.module.css"
 import ContactForm from "../components/contactForm"
 
@@ -48,7 +48,7 @@ class Contact extends React.Component {
           {" "}
           <meta charSet="utf-8" /> <title>Contact</title>{" "}
         </Helmet>
-        <Layout>
+        <div>
           <div className={contactStyles.contactContent}>
             <h2>Contact Stu</h2>
             <h3>phone</h3>
@@ -80,7 +80,7 @@ class Contact extends React.Component {
               </div>
             )}
           </div>
-        </Layout>
+        </div>
       </div>
     )
   }
