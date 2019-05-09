@@ -1,7 +1,7 @@
 import React from "react"
 import Helmet from "react-helmet"
 import Layout from "../components/layout"
-import IndexContent from "../components/indexContent"
+import HomeContent from "../components/homeContent"
 
 // const sayHello = () =>
 
@@ -14,7 +14,7 @@ const Index = () => {
       </Helmet>
 
       <Layout>
-        <IndexContent />
+        <HomeContent />
       </Layout>
     </div>
   )
