@@ -6,13 +6,13 @@ export default () => (
   <div className={homeStyles.homeContent}>
     {/* <h3>I am</h3> */}
     <p className={homeStyles.statement}>
-      <span>I am</span> a freelance web developer, specializing in cutting-edge
+      I am a <span>freelance web developer</span> specializing in cutting-edge
       JavaScript technologies
     </p>
     {/* <h3>I create</h3> */}
     <p className={homeStyles.statement}>
-      <span>I create</span> sharp, functional, mobile-friendly, and fast
-      websites
+      Working alongside clients like you, <span>I design and build</span> custom
+      websites and web-applications.
     </p>
     <LinkButton buttonText="Get in touch!" />
     {/* <h3>I can</h3> */}
