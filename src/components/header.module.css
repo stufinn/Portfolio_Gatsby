@@ -15,7 +15,7 @@
 .stuImg {
   border-radius: 50%;
   /* margin-left: 100px; */
-  justify-self: center;
+  margin-left: 50px;
 }
 
 /* MEDIA QUERIES */

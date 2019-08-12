@@ -36,7 +36,7 @@ export default () => (
         <Img
           style={{
             // borderRadius: "50%",
-            justifySelf: "center",
+            marginLeft: 100,
           }}
           imgStyle={{ borderRadius: "50%" }}
           fixed={data.stuPic.childImageSharp.fixed}

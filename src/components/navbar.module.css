@@ -15,6 +15,10 @@
   /* text-decoration: black; */
 }
 
+.active-link {
+  color: var(--stuGreen);
+}
+
 /* source: http://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
 
 .allLinks a:before {
@@ -37,8 +41,6 @@
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-
-
 
 li {
   margin-top: 20px;
