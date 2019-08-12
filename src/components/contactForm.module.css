@@ -17,12 +17,12 @@
 
 .formField {
   border: 1px solid var(--stuGreen);
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 0.75em;
 }
 
 .button {
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1em;
   background-color: var(--stuGreen);
   border: solid 1px var(--stuGreen);

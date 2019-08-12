@@ -3,7 +3,7 @@
   border: 0;
   position: relative;
   font-size: 2em;
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto", sans-serif;
   justify-self: center;
   padding: 10px;
   background-color: rgb(var(--stuGreenRGB), 0.9);

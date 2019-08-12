@@ -130,12 +130,12 @@ table {
 
 /* END OF CSS RESET */
 
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400");
 
 :root {
   --stuGreen: #35cb70;
-  --stuGreenRGB: 53,230,112;
-  font-family: "Roboto Slab", serif;
+  --stuGreenRGB: 53, 230, 112;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   box-sizing: border-box;
 }
