@@ -1,7 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import headerStyles from "./header.module.css"
-import Img from "gatsby-image"
 
 export default () => (
   <StaticQuery
@@ -10,13 +9,6 @@ export default () => (
         site {
           siteMetadata {
             title
-          }
-        }
-        stuPic: file(relativePath: { eq: "images/stuPic.jpg" }) {
-          childImageSharp {
-            fixed(width: 200) {
-              ...GatsbyImageSharpFixed
-            }
           }
         }
       }
@@ -33,15 +25,6 @@ export default () => (
         {/* <img src={stuImg} alt="Stu Finn" className={headerStyles.stuImg} /> */}
 
         {/* <div style={imgStyle} /> */}
-        <Img
-          style={{
-            // borderRadius: "50%",
-            marginLeft: 100,
-          }}
-          imgStyle={{ borderRadius: "50%" }}
-          fixed={data.stuPic.childImageSharp.fixed}
-          alt=""
-        />
       </div>
     )}
   />
