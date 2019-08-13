@@ -50,5 +50,6 @@ module.exports = {
         component: require.resolve(`${__dirname}/src/components/layout`),
       },
     },
+    `gatsby-plugin-sass`,
   ],
 }
