@@ -20,7 +20,7 @@ export default () => (
             {data.site.siteMetadata.title}
           </h1>
           <div className={headerStyles.headLine} />
-          <h2 className={headerStyles.subTitle}>Web design & development</h2>
+          <h2 className={headerStyles.subTitle}>Web development & design</h2>
         </div>
         {/* <img src={stuImg} alt="Stu Finn" className={headerStyles.stuImg} /> */}
 
