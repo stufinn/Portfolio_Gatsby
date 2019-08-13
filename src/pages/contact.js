@@ -1,7 +1,6 @@
 import React from "react"
 import Helmet from "react-helmet"
 
-import contactStyles from "./contact.module.css"
 import ContactForm from "../components/contactForm"
 
 class Contact extends React.Component {
@@ -49,7 +48,7 @@ class Contact extends React.Component {
           <meta charSet="utf-8" /> <title>Contact</title>{" "}
         </Helmet>
         <div>
-          <div className={contactStyles.contactContent}>
+          <div className="contactContent">
             <h2>Contact Stu</h2>
             <h3>phone</h3>
             <p>807.220.0856</p>
@@ -73,7 +72,7 @@ class Contact extends React.Component {
               />
             )}
             {this.state.submitted && (
-              <div className={contactStyles.formResponse}>
+              <div className="formResponse">
                 <p>Thanks for your message!</p>
                 <p>I'll be in touch soon.</p>
                 <button>Send another</button>
@@ -94,7 +93,7 @@ class Contact extends React.Component {
 //       <meta charSet="utf-8" /> <title>Contact</title>{" "}
 //     </Helmet>
 //     <Layout>
-//       <div className={contactStyles.contactContent}>
+//       <div className=contactContent}>
 //         <h2>Contact Stu</h2>
 //         <h3>phone</h3>
 //         <p>807.220.0856</p>
