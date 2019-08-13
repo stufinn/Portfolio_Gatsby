@@ -1,6 +1,5 @@
 import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
-import navbarStyles from "./navbar.module.css"
 
 const ListLink = props => (
   <li>
@@ -25,8 +24,8 @@ export default () => (
       }
     `}
     render={data => (
-      <nav className={navbarStyles.navbar}>
-        <ul className={navbarStyles.allLinks}>
+      <nav className="navbar">
+        <ul className="allLinks">
           {data.site.siteMetadata.menuLinks.map(link => (
             <ListLink to={link.link} key={link.name}>
               {" "}

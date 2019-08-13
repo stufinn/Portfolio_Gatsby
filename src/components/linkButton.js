@@ -1,5 +1,4 @@
 import React from "react"
-import linkButtonStyles from "./linkButton.module.css"
 import { Link } from "gatsby"
 // import { Link } from "gatsby"
 
@@ -15,8 +14,8 @@ class LinkButton extends React.Component {
 
   render() {
     return (
-      <div className={linkButtonStyles.linkButtonContainer}>
-        <Link to="/contact" className={linkButtonStyles.linkButton}>
+      <div className="linkButtonContainer">
+        <Link to="/contact" className="linkButton">
           {this.props.buttonText}
         </Link>
       </div>
