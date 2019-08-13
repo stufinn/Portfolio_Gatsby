@@ -1,5 +1,4 @@
 import React from "react"
-import contactFormStyles from "./contactForm.module.css"
 
 class ContactForm extends React.Component {
   constructor(props) {
@@ -21,22 +20,19 @@ class ContactForm extends React.Component {
   }
   render() {
     return (
-      <div className={contactFormStyles.contactFormContainer}>
-        <form
-          onSubmit={this.handleSubmit}
-          className={contactFormStyles.contactForm}
-        >
+      <div className="contactFormContainer">
+        <form onSubmit={this.handleSubmit} className="contactForm">
           <input
             type="text"
             placeholder="Your name here"
             name="name"
-            className={contactFormStyles.formField}
+            className="formField"
             required
           />
           <input
             type="email"
             placeholder="email address"
-            className={contactFormStyles.formField}
+            className="formField"
             name="email"
           />
 
@@ -45,10 +41,10 @@ class ContactForm extends React.Component {
             cols="30"
             name="message"
             placeholder="Your message here"
-            className={contactFormStyles.formField}
+            className="formField"
           />
 
-          <button type="submit" className={contactFormStyles.button}>
+          <button type="submit" className="button">
             Send message
           </button>
         </form>

@@ -1,2 +1,34 @@
 @import "../base/settings";
 @import "../base/base";
+@import "../components/contactForm";
+@import "../components/contentBox";
+@import "../components/layout";
+@import "../components/header";
+@import "../components/homeContent";
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-template-areas:
+    "header navbar"
+    "content content";
+  min-height: 100vh;
+  /* padding: 40px 0 0 90px; */
+}
+
+/* .mainContent {
+  grid-area: content;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "header"
+    "content";
+} */
+
+@media screen and (max-width: 800px) {
+  .layout {
+    grid-template-columns: 1fr;
+    /* grid-template-areas: "main"; */
+    padding: 40px 20px 20px 20px;
+  }
+}
