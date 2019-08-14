@@ -19,9 +19,6 @@ export default () => (
 
           <h2 className="subTitle">Web development & design</h2>
         </div>
-        {/* <img src={stuImg} alt="Stu Finn" className={headerStyles.stuImg} /> */}
-
-        {/* <div style={imgStyle} /> */}
       </div>
     )}
   />
