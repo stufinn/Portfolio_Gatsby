@@ -64,7 +64,7 @@ class Contact extends React.Component {
               github:{" "}
               <a href="https://github.com/stufinn">github.com/stufinn</a>
             </p>
-            <h3>...or send a message!</h3>
+            {/* <h3>...or send a message!</h3>
             {this.state.displayForm && (
               <ContactForm
                 handleHideForm={this.handleHideForm}
@@ -77,7 +77,7 @@ class Contact extends React.Component {
                 <p>I'll be in touch soon.</p>
                 <button>Send another</button>
               </div>
-            )}
+            )} */}
           </div>
         </div>
       </div>
