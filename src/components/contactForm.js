@@ -20,19 +20,19 @@ class ContactForm extends React.Component {
   }
   render() {
     return (
-      <div className="contactFormContainer">
+      <div className="contactForm__Container">
         <form onSubmit={this.handleSubmit} className="contactForm">
           <input
             type="text"
             placeholder="Your name here"
             name="name"
-            className="formField"
+            className="contactPage__formField"
             required
           />
           <input
             type="email"
             placeholder="email address"
-            className="formField"
+            className="contactPage__formField"
             name="email"
           />
 
@@ -41,10 +41,10 @@ class ContactForm extends React.Component {
             cols="30"
             name="message"
             placeholder="Your message here"
-            className="formField"
+            className="contactPage__formField"
           />
 
-          <button type="submit" className="button">
+          <button type="submit" className="contactForm__button">
             Send message
           </button>
         </form>
