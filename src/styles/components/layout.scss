@@ -4,7 +4,7 @@
 @import "../components/contactPage";
 @import "../components/contentBox";
 @import "../components/header";
-@import "../components/homeContent";
+@import "../components/indexPage";
 @import "../components/linkButton";
 @import "../components/navbar";
 @import "../components/portfolioPage";
@@ -12,10 +12,11 @@
 
 .layout {
   display: grid;
-  grid-template-columns: 1fr 200px;
-  grid-template-areas:
-    "header navbar"
-    "content content";
+  position: relative;
+  grid-template-rows: auto 1fr;
+  // grid-template-areas:
+  //   "header navbar"
+  //   "content navbar";
   min-height: 100vh;
   /* padding: 40px 0 0 90px; */
 }
@@ -30,9 +31,9 @@
 } */
 
 @media screen and (max-width: 800px) {
-  .layout {
-    grid-template-columns: 1fr;
-    /* grid-template-areas: "main"; */
-    padding: 40px 20px 20px 20px;
-  }
+  // .layout {
+  //   grid-template-columns: 1fr;
+  //   /* grid-template-areas: "main"; */
+  //   padding: 40px 20px 20px 20px;
+  // }
 }

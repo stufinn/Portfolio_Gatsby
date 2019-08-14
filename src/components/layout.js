@@ -7,9 +7,9 @@ import ContentBox from "./contentBox"
 export default ({ children }) => (
   <div className="layout">
     {/* <div className={layoutStyles.mainContent}> */}
+    <Navbar />
     <Header />
     <ContentBox>{children}</ContentBox>
     {/* </div> */}
-    <Navbar />
   </div>
 )

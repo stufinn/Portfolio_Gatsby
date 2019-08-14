@@ -1,0 +1,32 @@
+.homeContent {
+  // grid-area: main;
+  text-align: center;
+  max-width: 90%;
+}
+
+h3 {
+  padding-top: 30px;
+}
+
+p {
+  padding-top: 10px;
+}
+
+// @media screen and (max-width: 800px) {
+//   .homeContent {
+//     text-align: center;
+//   }
+// }
+
+.statement {
+  margin-bottom: 50px;
+}
+
+.statement:last-child {
+  margin-bottom: 0;
+}
+
+.statement span {
+  color: $main-color;
+  font-size: 1.5em;
+}

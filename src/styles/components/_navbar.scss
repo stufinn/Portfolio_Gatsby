@@ -1,10 +1,14 @@
 .navbar {
-  grid-area: "navbar";
+  // grid-area: "navbar";
   /* position: static; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 25px 30px 0 0;
 }
 
 .allLinks {
-  margin: 50px 0 0 15px;
+  // margin: 50px 0 0 15px;
   padding: 10px 0 10px 10px;
   border-left: 2px solid $main-color;
 }
