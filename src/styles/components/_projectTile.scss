@@ -1,7 +1,11 @@
 .projectTile {
-  width: 300px;
-  height: 300px;
+  align-content: center;
   background-color: grey;
+  display: grid;
+  height: 300px;
+  justify-content: center;
+  text-align: center;
+  width: 300px;
 }
 
 .projectTile2 {
