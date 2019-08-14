@@ -1,12 +1,10 @@
 .linkButton {
-  /* border: 2px solid rgb(var(--stuGreenRGB), 0.5); */
   border: 0;
   position: relative;
   font-size: 2em;
   font-family: "Roboto", sans-serif;
   justify-self: center;
   padding: 10px;
-  // background-color: rgb(var(--stuGreenRGB), 0.9);
   z-index: 10;
   border-radius: 20px;
 }
@@ -16,7 +14,6 @@
   /* border-color: black; */
   animation: fadeIn 0.2s linear forwards;
   color: black;
-  /* background-color: rgb(var(--stuGreenRGB), 0); */
   /* color: white; */
 }
 
@@ -46,11 +43,9 @@
 
 @keyframes fadeIn {
   0% {
-    // background-color: rgb(var(--stuGreenRGB), 0.9);
     color: black;
   }
   100% {
-    // background-color: rgb(var(--stuGreenRGB), 0.5);
     /* color: white; */
   }
 }
