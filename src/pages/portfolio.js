@@ -4,9 +4,16 @@ import Helmet from "react-helmet"
 import ProjectTile from "../components/projectTile"
 
 const projects = [
-  { name: "EWRB" },
-  { name: "ScriptBae" },
-  { name: "Reilly Scott's Electronic Press Kit" },
+  { name: "EWRB", link: "https://www.ewrb.ca" },
+  { name: "ScriptBae", link: "https://www.scriptbae.com" },
+  {
+    name: "Reilly Scott's Electronic Press Kit",
+    link: "https://www.reillyscott.ca/epk",
+  },
+  {
+    name: "Sioux Lookout Minor Hockey Association",
+    link: "https://slmha-site.netlify.com",
+  },
 ]
 
 export default () => (
@@ -19,7 +26,7 @@ export default () => (
       <h2 className="projectsTitle">Portfolio</h2>
       <div className="projects">
         {projects.map(project => (
-          <ProjectTile key={project.name} projectName={project.name} />
+          <ProjectTile key={project.name} project={project} />
         ))}
       </div>
     </div>

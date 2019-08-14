@@ -1,7 +1,12 @@
 import React from "react"
 
-export default ({ projectName }) => (
-  <div onClick={() => console.log(projectName)} className="projectTile">
-    {projectName}
-  </div>
+export default ({ project }) => (
+  <a
+    href={project.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="projectTile"
+  >
+    <div className="projectTile__projectName">{project.name}</div>
+  </a>
 )
