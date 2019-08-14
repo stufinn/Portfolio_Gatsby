@@ -138,7 +138,6 @@ body {
 }
 
 :root {
-  --stuGreen: #35cb70;
   --stuGreenRGB: 53, 230, 112;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -151,7 +150,7 @@ h1 {
 
 h2,
 h3 {
-  color: var(--stuGreen);
+  color: $main-color;
 }
 
 h2 {
@@ -176,5 +175,5 @@ a {
 }
 
 a:hover {
-  color: var(--stuGreen);
+  color: $main-color;
 }

@@ -3,7 +3,8 @@ import { StaticQuery, graphql, Link } from "gatsby"
 
 const ListLink = props => (
   <li>
-    <Link to={props.to} activeStyle={{ color: "var(--stuGreen)" }}>
+    {/* can't use scss variables in activeStyle? - check */}
+    <Link to={props.to} activeStyle={{ color: "#35cb70" }}>
       {props.children}
     </Link>
   </li>

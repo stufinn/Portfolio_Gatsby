@@ -1,6 +1,6 @@
 .contactContent a {
   text-decoration: underline;
-  text-decoration-color: var(--stuGreen);
+  text-decoration-color: $main-color;
 }
 
 /* .contactContent a:hover {
@@ -22,7 +22,7 @@
   grid-row-gap: 5px;
   justify-items: center;
   margin: 20px 0 20px 0;
-  border: 5px solid var(--stuGreen);
+  border: 5px solid $main-color;
   padding: 0 10px 10px 10px;
   /* width: 50%; */
   justify-self: center;

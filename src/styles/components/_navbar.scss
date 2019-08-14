@@ -6,7 +6,7 @@
 .allLinks {
   margin: 50px 0 0 15px;
   padding: 10px 0 10px 10px;
-  border-left: 2px solid var(--stuGreen);
+  border-left: 2px solid $main-color;
 }
 
 .allLinks a {
@@ -17,7 +17,7 @@
 }
 
 .active-link {
-  color: var(--stuGreen);
+  color: $main-color;
 }
 
 /* source: http://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
@@ -29,7 +29,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--stuGreen);
+  background-color: $main-color;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
