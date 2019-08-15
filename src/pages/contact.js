@@ -49,14 +49,13 @@ class Contact extends React.Component {
         </Helmet>
         <div>
           <div className="contactPage">
-            <h2>Contact Stu</h2>
             <h3>phone</h3>
             <p>807.220.0856</p>
             <h3>email</h3>
             <p>
-              <a href="mailto:stu.finn@gmail.com">stu.finn@gmail.com</a>
+              <a href="mailto:stufinn@gmail.com">stufinn@gmail.com</a>
             </p>
-            <h3>social</h3>
+            <h3>social / other</h3>
             <p>
               twitter: <a href="https://twitter.com/stufinn">@stufinn</a>
             </p>
