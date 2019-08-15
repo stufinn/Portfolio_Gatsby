@@ -15,7 +15,7 @@ class LinkButton extends React.Component {
   render() {
     return (
       <div className="linkButtonContainer">
-        <Link to="/contact" className="linkButton">
+        <Link to={`/${this.props.linkToPage}`} className="linkButton">
           {this.props.buttonText}
         </Link>
       </div>
