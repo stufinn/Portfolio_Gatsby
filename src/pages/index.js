@@ -25,8 +25,10 @@ const Index = () => {
         <span>custom</span> websites and web applications.
       </p>
 
-      <LinkButton buttonText="Samples of My Work" linkToPage="portfolio" />
-      <LinkButton buttonText="Get In Touch" linkToPage="portfolio" />
+      <div className="index__links">
+        {/* <LinkButton buttonText="See My Work" linkToPage="portfolio" /> */}
+        <LinkButton buttonText="Get In Touch!" linkToPage="portfolio" />
+      </div>
 
       {/* <h3>I create</h3> */}
       {/* <p className="statement">
