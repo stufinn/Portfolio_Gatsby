@@ -27,7 +27,7 @@ const Index = () => {
 
       <div className="index__links">
         {/* <LinkButton buttonText="See My Work" linkToPage="portfolio" /> */}
-        <LinkButton buttonText="Get In Touch!" linkToPage="portfolio" />
+        <LinkButton buttonText="Get In Touch!" linkToPage="contact" />
       </div>
 
       {/* <h3>I create</h3> */}
