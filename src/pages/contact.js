@@ -1,7 +1,7 @@
 import React from "react"
 import Helmet from "react-helmet"
 
-import ContactForm from "../components/contactForm"
+// import ContactForm from "../components/contactForm"
 
 class Contact extends React.Component {
   constructor(props) {
