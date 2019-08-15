@@ -1,3 +1,7 @@
+.index__links {
+  margin-top: 100px;
+}
+
 .homeContent {
   // grid-area: main;
   text-align: center;
@@ -29,4 +33,10 @@ p {
 .statement span {
   color: $main-color;
   font-size: 1.5em;
+}
+
+@media screen and (max-width: 800px) {
+  .statement:first-child {
+    margin-top: 50px;
+  }
 }

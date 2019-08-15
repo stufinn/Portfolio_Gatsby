@@ -11,7 +11,7 @@ export default ({ project, tileImage }) => {
       className="projectTile"
     >
       {/* <div className="projectTile__projectName">{project.name}</div> */}
-      <Img fixed={tileImage.fixed} />
+      <Img className="projectTile__image" fixed={tileImage.fixed} />
     </a>
   )
 }

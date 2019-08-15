@@ -1,15 +1,11 @@
-.projectsTitle {
-  text-align: center;
-}
-
 .projects {
-  margin-top: 30px;
+  margin-top: 60px;
   display: grid;
   grid-template-columns: repeat(2, auto);
   /* grid-template-rows: repeat() */
   justify-items: center;
-  grid-column-gap: 25px;
-  grid-row-gap: 25px;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -18,5 +14,9 @@
   .projects {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+  }
+
+  .projectsTitle {
+    margin-top: 30px;
   }
 }

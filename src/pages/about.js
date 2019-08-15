@@ -9,7 +9,9 @@ export default () => (
     </Helmet>
     <div>
       <h2>About Stu</h2>
-      <p>This website is under development</p>
+      <p style={{ paddingTop: 50 }}>
+        [ This page is currently under development. Check back soon! ]
+      </p>
     </div>
   </div>
 )

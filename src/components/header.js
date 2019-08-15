@@ -17,7 +17,7 @@ export default () => (
         <div className="headerText">
           <h1 className="mainName">{data.site.siteMetadata.title}</h1>
 
-          <h2 className="subTitle">Web development & design</h2>
+          <h2 className="header__subTitle">Web development & design</h2>
         </div>
       </div>
     )}
