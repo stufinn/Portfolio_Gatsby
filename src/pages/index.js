@@ -26,8 +26,8 @@ const Index = () => {
         </p>
         {/* <h3>I create</h3> */}
         <p className="statement">
-          I help clients like you to, <span>design & build</span> custom
-          websites and web applications.
+          I help clients like you to <span>design & build</span> custom websites
+          and web applications.
         </p>
       </div>
     </div>
