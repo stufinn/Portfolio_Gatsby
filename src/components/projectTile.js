@@ -1,12 +1,17 @@
 import React from "react"
+import Img from "gatsby-image"
 
-export default ({ project }) => (
-  <a
-    href={project.link}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="projectTile"
-  >
-    <div className="projectTile__projectName">{project.name}</div>
-  </a>
-)
+export default ({ project, tileImage }) => {
+  console.log(tileImage)
+  return (
+    <a
+      href={project.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="projectTile"
+    >
+      {/* <div className="projectTile__projectName">{project.name}</div> */}
+      <Img fixed={tileImage.fixed} />
+    </a>
+  )
+}
