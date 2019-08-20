@@ -21,8 +21,8 @@ const Index = () => {
 
       {/* <h3>I am</h3> */}
       <p className="statement">
-        Working with <span>clients like you</span> to build modern,{" "}
-        <span>custom</span> websites and web applications.
+        <span>Blazing fast</span>, modern and secure{" "}
+        <span>custom-built websites</span> and web applications.
       </p>
 
       <div className="index__links">
