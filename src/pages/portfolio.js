@@ -10,7 +10,7 @@ export default ({ data }) => {
   const projects = [
     {
       name: "Sioux Lookout Minor Hockey Association",
-      link: "https://slmha-site.netlify.com",
+      link: "https://slmha.net",
       imageRef: data.slmhaImg.edges[0].node.childImageSharp,
     },
     {
