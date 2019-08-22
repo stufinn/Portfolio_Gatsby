@@ -50,7 +50,9 @@ class Contact extends React.Component {
         <div>
           <div className="contactPage">
             <h3>phone</h3>
-            <p>807.220.0856</p>
+            <p>
+              <a href="tel:+18072200856">807.220.0856</a>
+            </p>
             <h3>email</h3>
             <p>
               <a href="mailto:stufinn@gmail.com">stufinn@gmail.com</a>
