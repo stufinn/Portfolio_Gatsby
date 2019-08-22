@@ -10,7 +10,7 @@
   margin-bottom: 50px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: $break-point) {
   .projects {
     grid-template-columns: 1fr;
     grid-template-rows: auto;

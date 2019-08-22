@@ -6,6 +6,7 @@
 @import "../components/header";
 @import "../components/indexPage";
 @import "../components/linkButton";
+@import "../components/mobileNav";
 @import "../components/navbar";
 @import "../components/portfolioPage";
 @import "../components/projectTile";
@@ -30,7 +31,7 @@
     "content";
 } */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: $break-point) {
   // .layout {
   //   grid-template-columns: 1fr;
   //   /* grid-template-areas: "main"; */

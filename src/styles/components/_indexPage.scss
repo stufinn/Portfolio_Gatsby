@@ -16,7 +16,7 @@ p {
   padding-top: 10px;
 }
 
-// @media screen and (max-width: 800px) {
+// @media screen and (max-width: $break-point) {
 //   .homeContent {
 //     text-align: center;
 //   }
@@ -35,7 +35,7 @@ p {
   font-size: 1.5em;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: $break-point) {
   .statement:first-child {
     margin-top: 50px;
   }

@@ -5,6 +5,10 @@
   margin: 20px 0 100px 90px;
 }
 
+.header__br {
+  display: none;
+}
+
 .header__link {
   color: white;
   text-decoration: none;
@@ -40,11 +44,8 @@
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: $break-point) {
   .header {
-    //     grid-template-columns: 1fr;
-    //     grid-template-rows: auto auto;
-    // justify-items: center;
     text-align: center;
     margin: 25px 0 0 0;
     padding: 0;
@@ -54,6 +55,11 @@
     h2 {
       font-size: 2em;
     }
+  }
+
+  .header__br {
+    display: block;
+    line-height: 0;
   }
 
   .headerText {
@@ -74,12 +80,4 @@
     display: flex;
     justify-content: center;
   }
-
-  //   .headLine {
-  //     justify-self: center;
-  //   }
-
-  //   .stuImg {
-  //     margin-top: 25px;
-  //   }
 }

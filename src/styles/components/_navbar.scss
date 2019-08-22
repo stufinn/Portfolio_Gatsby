@@ -21,6 +21,10 @@
   /* text-decoration: black; */
 }
 
+.navbar__link:hover {
+  color: white;
+}
+
 .active-link {
   color: $main-color;
 }
@@ -58,7 +62,7 @@ li:first-child {
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: $break-point) {
   .navbar {
     display: none;
   }
