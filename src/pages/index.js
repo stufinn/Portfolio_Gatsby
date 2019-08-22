@@ -21,12 +21,11 @@ const Index = () => {
 
       {/* <h3>I am</h3> */}
       <p className="statement">
-        <span>Blazing fast</span>, modern and secure{" "}
+        <span>Blazing fast,</span> modern and secure{" "}
         <span>custom-built websites</span> and web applications.
       </p>
 
       <div className="index__links">
-        {/* <LinkButton buttonText="See My Work" linkToPage="portfolio" /> */}
         <LinkButton buttonText="Get In Touch!" linkToPage="contact" />
       </div>
 

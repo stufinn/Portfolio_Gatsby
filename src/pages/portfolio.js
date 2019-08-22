@@ -36,7 +36,7 @@ export default ({ data }) => {
         <meta charSet="utf-8" /> <title>Portfolio</title>{" "}
       </Helmet>
       <div>
-        <h2 className="projectsTitle">Projects</h2>
+        <h2 className="projectsTitle">Portfolio</h2>
         <div className="projects">
           {projects.map(project => (
             <ProjectTile
