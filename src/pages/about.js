@@ -10,7 +10,7 @@ export default () => (
     <div>
       <h2>About Stu</h2>
       <p style={{ paddingTop: 50 }}>
-        [ This page is currently under development. Check back soon! ]
+        [ This page is currently under development. ]
       </p>
     </div>
   </div>
