@@ -23,7 +23,8 @@ p {
 // }
 
 .statement {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  max-width: 420px;
 }
 
 .statement:last-child {
@@ -37,6 +38,6 @@ p {
 
 @media screen and (max-width: $break-point) {
   .statement:first-child {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 }
