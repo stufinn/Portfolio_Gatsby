@@ -1,9 +1,9 @@
 .mobileNav {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 30px;
   justify-self: center;
-  margin-top: 25px;
-  width: 80%;
+  margin-top: 30px;
   font-size: 1.5em;
 }
 
@@ -41,5 +41,14 @@
 @media screen and (min-width: $break-point) {
   .mobileNav {
     display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mobileNav {
+    grid-template-columns: auto auto;
+    grid-auto-rows: auto auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
   }
 }
