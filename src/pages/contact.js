@@ -55,7 +55,9 @@ class Contact extends React.Component {
             </p>
             <h3>email</h3>
             <p>
-              <a href="mailto:stufinn@gmail.com">stufinn@gmail.com</a>
+              <a href="mailto:stufinn@gmail.com?subject=Website">
+                stufinn@gmail.com
+              </a>
             </p>
             <h3>social / other</h3>
             <p>
