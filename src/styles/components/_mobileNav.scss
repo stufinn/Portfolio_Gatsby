@@ -17,6 +17,8 @@
   color: white;
 }
 
+// https://tobiasahlin.com/blog/css-trick-animating-link-underlines/
+// ---- START Animated underline on hover --------
 .mobileNav__link:before {
   content: "";
   position: absolute;
@@ -37,6 +39,8 @@
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+// ---- END Animated underline on hover --------
 
 @media screen and (min-width: $break-point) {
   .mobileNav {
