@@ -3,16 +3,28 @@ import { Link } from "gatsby"
 
 const MobileNav = () => (
   <nav className="mobileNav">
-    <Link className="mobileNav__link" to="/">
+    <Link className="mobileNav__link" to="/" activeStyle={{ color: "#35cb70" }}>
       Home
     </Link>
-    <Link className="mobileNav__link" to="/about">
+    <Link
+      className="mobileNav__link"
+      to="/about"
+      activeStyle={{ color: "#35cb70" }}
+    >
       About
     </Link>
-    <Link className="mobileNav__link" to="/portfolio">
+    <Link
+      className="mobileNav__link"
+      to="/portfolio"
+      activeStyle={{ color: "#35cb70" }}
+    >
       Portfolio
     </Link>
-    <Link className="mobileNav__link" to="/contact">
+    <Link
+      className="mobileNav__link"
+      to="/contact"
+      activeStyle={{ color: "#35cb70" }}
+    >
       Contact
     </Link>
   </nav>
