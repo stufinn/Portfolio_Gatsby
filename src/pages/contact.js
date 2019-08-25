@@ -48,6 +48,8 @@ class Contact extends React.Component {
           <meta charSet="utf-8" /> <title>Contact</title>{" "}
         </Helmet>
         <div>
+          <h2 className="projectsTitle">Contact Stu</h2>
+
           <div className="contactPage">
             <h3>phone</h3>
             <p>

@@ -8,7 +8,7 @@ export default () => (
       <meta charSet="utf-8" /> <title>About</title>{" "}
     </Helmet>
     <div>
-      <h2>About Stu</h2>
+      <h2 className="projectsTitle">About Stu</h2>
       <p style={{ paddingTop: 50 }}>
         [ This page is currently under development. Check back soon! ]
       </p>
