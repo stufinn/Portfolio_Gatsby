@@ -16,10 +16,13 @@ export default ({ data }) => (
     />
     <div className="aboutPage__text"></div>
     <p>
-      Hi! <span role="img">👋</span> I am a{" "}
-      <span className="aboutPage--emph">software developer</span> based out of a
-      beautiful little town called Sioux Lookout, in Northwestern Ontario,
-      Canada.
+      Hi!{" "}
+      <span role="img" aria-label="hand-wave emoji">
+        👋
+      </span>{" "}
+      I am a <span className="aboutPage--emph">software developer</span> based
+      out of a beautiful little town called Sioux Lookout, in Northwestern
+      Ontario, Canada.
     </p>
     <p>
       I have a passion for creating{" "}
@@ -31,9 +34,7 @@ export default ({ data }) => (
     <p>
       I’ve got a background in web development (surprise, surprise), an
       undergrad in biological sciences and international development, a masters
-      degree in environmental studies. I am also a certified professional
-      project manager (PMP), when my credential isn’t lapsed that is (
-      <span role="img">😬</span>… I’m on it!).
+      degree in environmental studies. I am also trained as project manager.
     </p>
     <p>
       The websites that I create are often inspired by{" "}
