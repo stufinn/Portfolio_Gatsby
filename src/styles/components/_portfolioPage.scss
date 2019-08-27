@@ -10,6 +10,10 @@
   margin-bottom: 50px;
 }
 
+.projectsTitle {
+  text-align: center;
+}
+
 @media screen and (max-width: $break-point) {
   .projects {
     grid-template-columns: 1fr;
@@ -18,6 +22,5 @@
 
   .projectsTitle {
     margin-top: 30px;
-    text-align: center;
   }
 }
