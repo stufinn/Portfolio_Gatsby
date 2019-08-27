@@ -33,8 +33,9 @@ export default ({ data }) => (
     </p>{" "}
     <p>
       I’ve got a background in web development (surprise, surprise), an
-      undergrad in biological sciences and international development, a masters
-      degree in environmental studies. I am also trained as project manager.
+      undergrad in biological sciences and international development, as well as
+      a masters degree in environmental studies. I am also trained as project
+      manager.
     </p>
     <p>
       The websites that I create are often inspired by{" "}
