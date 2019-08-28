@@ -29,3 +29,9 @@
   /* width: 50%; */
   justify-self: center;
 }
+
+.contactPage__iconContainer {
+  display: flex;
+  justify-content: center;
+  grid-column-gap: 20px;
+}

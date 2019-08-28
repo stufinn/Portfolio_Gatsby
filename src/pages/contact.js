@@ -26,21 +26,32 @@ const Contact = ({ data }) => (
             stufinn@gmail.com
           </a>
         </p>
-        <h3>social / other</h3>
+        <h3>other</h3>
 
-        <Img fixed={data.twitterImg.edges[0].node.childImageSharp.fixed} />
-
-        <img
-          className="aboutPage__icon"
-          src="../images/epk.png"
-          alt="twitterIcon"
-        ></img>
-        <p>
-          twitter: <a href="https://twitter.com/stufinn">@stufinn</a>
-        </p>
-        <p>
-          github: <a href="https://github.com/stufinn">github.com/stufinn</a>
-        </p>
+        <div className="contactPage__iconContainer">
+          <a
+            href="https://twitter.com/stufinn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Img
+              alt="Twitter icon"
+              className="contactPage__icon"
+              fixed={data.twitterImg.edges[0].node.childImageSharp.fixed}
+            />
+          </a>
+          <a
+            href="https://github.com/stufinn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Img
+              alt="GitHub icon"
+              className="contactPage__icon"
+              fixed={data.githubImg.edges[0].node.childImageSharp.fixed}
+            />
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -51,6 +62,17 @@ export default Contact
 export const pageQuery = graphql`
   query contactQuery {
     twitterImg: allFile(filter: { name: { eq: "twitterIcon" } }) {
+      edges {
+        node {
+          childImageSharp {
+            fixed(height: 100, width: 100) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+      }
+    }
+    githubImg: allFile(filter: { name: { eq: "githubIcon" } }) {
       edges {
         node {
           childImageSharp {
