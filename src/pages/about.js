@@ -7,7 +7,7 @@ export default ({ data }) => (
   <div className="aboutPage">
     <Helmet>
       {" "}
-      <meta charSet="utf-8" /> <title>About</title>{" "}
+      <meta charSet="utf-8" /> <title>About Stu</title>{" "}
     </Helmet>
     {/* Profile photo with wrapper for gradient border */}
     <h2 className="projectsTitle">About Me</h2>
