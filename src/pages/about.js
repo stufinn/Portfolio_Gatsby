@@ -19,10 +19,6 @@ export default ({ data }) => (
     </div>
     <div className="aboutPage__text"></div>
     <p>
-      Hi!{" "}
-      <span role="img" aria-label="hand-wave emoji">
-        👋
-      </span>{" "}
       I'm a <span className="aboutPage--emph">software developer</span> based
       out of Sioux Lookout, in Northwestern Ontario, Canada.
     </p>
@@ -34,10 +30,9 @@ export default ({ data }) => (
       <span className="aboutPage--emph">code</span>.
     </p>{" "}
     <p>
-      I’ve got a background in web development (surprise, surprise), an
-      undergrad in biological sciences and international development, as well as
-      a masters degree in environmental studies. I am also trained as project
-      manager.
+      I’ve got a background in web development, an undergrad in biological
+      sciences and international development, as well as a masters degree in
+      environmental studies. I am also trained as a project manager.
     </p>
     <p>
       The websites that I create are often inspired by{" "}
