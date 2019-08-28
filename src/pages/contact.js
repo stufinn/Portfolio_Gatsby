@@ -1,5 +1,7 @@
 import React from "react"
 import Helmet from "react-helmet"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
 // import ContactForm from "../components/contactForm"
 
@@ -39,7 +41,7 @@ class Contact extends React.Component {
     })
   }
 
-  render() {
+  render({ data }) {
     return (
       <div>
         {" "}
@@ -62,6 +64,14 @@ class Contact extends React.Component {
               </a>
             </p>
             <h3>social / other</h3>
+
+            <Img fixed={data.stuImg.edges[0].node.childImageSharp.fixed} />
+
+            <img
+              className="aboutPage__icon"
+              src="../images/epk.png"
+              alt="twitterIcon"
+            ></img>
             <p>
               twitter: <a href="https://twitter.com/stufinn">@stufinn</a>
             </p>
@@ -91,3 +101,19 @@ class Contact extends React.Component {
 }
 
 export default Contact
+
+export const pageQuery = graphql`
+  query contactQuery {
+    twitterImg: allFile(filter: { name: { eq: "twitterIcon" } }) {
+      edges {
+        node {
+          childImageSharp {
+            fixed(height: 100, width: 100) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+      }
+    }
+  }
+`
