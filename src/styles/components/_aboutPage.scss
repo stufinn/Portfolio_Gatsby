@@ -1,4 +1,4 @@
-.aboutContent {
+.aboutPage {
   display: grid;
   max-width: 80%;
   margin-bottom: 25px;
@@ -12,8 +12,20 @@
     text-decoration: underline;
   }
   a:hover {
-    color: white;
+    color: $quaternary-color;
   }
+}
+
+.aboutPage__borderGradientContainer {
+  display: grid;
+  justify-items: center;
+  justify-self: center;
+  align-items: center;
+  width: 310px;
+  height: 310px;
+  background-image: linear-gradient(-25deg, $quaternary-color, $main-color);
+  border-radius: 50%;
+  margin-top: 30px;
 }
 
 .aboutPage--emph {
@@ -28,8 +40,7 @@
 .aboutPage__pic {
   border-radius: 50%;
   justify-self: center;
-  border: 5px solid $main-color;
-  margin-top: 30px;
+  // border: 5px solid $main-color;
 }
 
 @media screen and (max-width: $break-point) {
