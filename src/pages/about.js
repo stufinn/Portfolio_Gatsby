@@ -10,7 +10,7 @@ export default ({ data }) => (
       <meta charSet="utf-8" /> <title>About Stu</title>{" "}
     </Helmet>
     {/* Profile photo with wrapper for gradient border */}
-    <h2 className="projectsTitle">About Me</h2>
+    <h2 className="projectsTitle">About Stu</h2>
     <div className="aboutPage__borderGradientContainer">
       <Img
         className="aboutPage__pic"
