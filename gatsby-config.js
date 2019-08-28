@@ -39,7 +39,7 @@ module.exports = {
         background_color: "#ffffff",
         theme_color: "ffffff",
         display: "standalone",
-        icon: "src/images/Stu2019.png",
+        icon: "src/images/stuCircle2019.png",
       },
     },
     "gatsby-plugin-offline",
