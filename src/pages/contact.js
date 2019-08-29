@@ -53,6 +53,18 @@ const Contact = ({ data }) => (
               title="GitHub"
             />
           </a>
+          <a
+            href="https://www.linkedin.com/in/stufinn/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contactPage__icon"
+          >
+            <Img
+              alt="LinkedIn icon"
+              fixed={data.linkedinImg.edges[0].node.childImageSharp.fixed}
+              title="LinkedIn"
+            />
+          </a>
         </div>
       </div>
     </div>
@@ -75,6 +87,17 @@ export const pageQuery = graphql`
       }
     }
     githubImg: allFile(filter: { name: { eq: "githubIcon" } }) {
+      edges {
+        node {
+          childImageSharp {
+            fixed(height: 100, width: 100) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+      }
+    }
+    linkedinImg: allFile(filter: { name: { eq: "linkedinIcon" } }) {
       edges {
         node {
           childImageSharp {
