@@ -13,7 +13,7 @@ const Contact = ({ data }) => (
       <meta charSet="utf-8" /> <title>Contact</title>{" "}
     </Helmet>
     <div>
-      <h2 className="projectsTitle">Contact Stu</h2>
+      <h2 className="projectsTitle">Let's Connect!</h2>
 
       <div className="contactPage">
         <h3>phone</h3>
@@ -33,22 +33,24 @@ const Contact = ({ data }) => (
             href="https://twitter.com/stufinn"
             target="_blank"
             rel="noopener noreferrer"
+            className="contactPage__icon"
           >
             <Img
               alt="Twitter icon"
-              className="contactPage__icon"
               fixed={data.twitterImg.edges[0].node.childImageSharp.fixed}
+              title="Twitter"
             />
           </a>
           <a
             href="https://github.com/stufinn"
             target="_blank"
             rel="noopener noreferrer"
+            className="contactPage__icon"
           >
             <Img
               alt="GitHub icon"
-              className="contactPage__icon"
               fixed={data.githubImg.edges[0].node.childImageSharp.fixed}
+              title="GitHub"
             />
           </a>
         </div>

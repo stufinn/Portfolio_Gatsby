@@ -2,7 +2,7 @@
   display: grid;
   text-align: center;
   a {
-    color: white;
+    color: $secondary-color;
   }
   a:hover {
     color: $main-color;
@@ -19,19 +19,16 @@
   }
 }
 
-.contactPage__formResponse {
-  display: grid;
-  grid-row-gap: 5px;
-  justify-items: center;
-  margin: 20px 0 20px 0;
-  border: 5px solid $main-color;
-  padding: 0 10px 10px 10px;
-  /* width: 50%; */
-  justify-self: center;
-}
-
 .contactPage__iconContainer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  grid-column-gap: 20px;
+}
+
+.contactPage__icon {
+  margin-right: 15px;
+}
+
+.contactPage__icon:last-of-type {
+  margin-right: 0;
 }
