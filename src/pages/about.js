@@ -15,6 +15,8 @@ export default ({ data }) => (
       <Img
         className="aboutPage__pic"
         fixed={data.stuImg.edges[0].node.childImageSharp.fixed}
+        title="Stu Finn"
+        alt="Stu Finn"
       />
     </div>
     <div className="aboutPage__text"></div>
