@@ -1,7 +1,7 @@
 import React from "react"
 import Helmet from "react-helmet"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 
 // import ContactForm from "../components/contactForm"
 
@@ -26,7 +26,7 @@ const Contact = ({ data }) => (
             stufinn@gmail.com
           </a>
         </p>
-        <h3>other</h3>
+        {/* <h3>other</h3>
 
         <div className="contactPage__iconContainer">
           <a
@@ -65,7 +65,7 @@ const Contact = ({ data }) => (
               title="LinkedIn"
             />
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   </div>
