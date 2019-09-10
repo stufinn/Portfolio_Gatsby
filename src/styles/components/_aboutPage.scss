@@ -2,7 +2,7 @@
   display: grid;
   max-width: 80%;
   margin-bottom: 25px;
-  text-align: justify;
+  text-align: center;
   p {
     margin-bottom: 20px;
     line-height: 1.25em;
@@ -45,6 +45,10 @@
   border-radius: 50%;
   justify-self: center;
   // border: 5px solid $main-color;
+}
+
+.aboutContent {
+  text-align: center;
 }
 
 @media screen and (max-width: $break-point) {
