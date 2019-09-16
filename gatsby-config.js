@@ -57,6 +57,10 @@ module.exports = {
         trackingId: "UA-147966659-1",
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: false,
+        // Setting this parameter is optional
+        anonymize: false,
+        // Setting this parameter is also optional
+        respectDNT: true,
       },
     },
   ],
