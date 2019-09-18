@@ -21,8 +21,8 @@ export default ({ data }) => (
     </div>
     <div className="aboutPage__text"></div>
     <p>
-      I'm a <span className="aboutPage--emph">software developer</span> based
-      out of Sioux Lookout, in Northwestern Ontario, Canada.
+      I'm a <span className="aboutPage--emph">software developer</span> based in
+      Northwestern Ontario, Canada.
     </p>
     <p>
       I have a passion for creating{" "}
