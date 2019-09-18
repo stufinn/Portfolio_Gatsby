@@ -32,9 +32,9 @@ export default ({ data }) => (
       <span className="aboutPage--emph">code</span>.
     </p>{" "}
     <p>
-      I have a background in web development, an undergrad in biological
-      sciences and international development, as well as a masters degree in
-      environmental studies. I am also trained as a project manager.
+      I have a background in web development, an undergrad in biology and
+      international development, as well as a masters degree in environmental
+      studies. I am also trained as a project manager.
     </p>
     <p>
       The websites that I create are often inspired by{" "}
