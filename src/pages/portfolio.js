@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 
 import ProjectTile from "../components/projectTile"
 
-export default ({ data }) => {
+const Portfolio = ({ data }) => {
   // console.log(data.epkImg)
 
   const projects = [
@@ -103,3 +103,4 @@ export const pageQuery = graphql`
     }
   }
 `
+export default Portfolio

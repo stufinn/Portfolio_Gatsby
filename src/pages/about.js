@@ -3,7 +3,7 @@ import Helmet from "react-helmet"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-export default ({ data }) => (
+const About = ({ data }) => (
   <div className="aboutPage">
     <Helmet>
       {" "}
@@ -71,3 +71,4 @@ export const pageQuery = graphql`
     }
   }
 `
+export default About
