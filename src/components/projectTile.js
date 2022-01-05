@@ -2,7 +2,6 @@ import React from "react"
 import Img from "gatsby-image"
 
 export default ({ project, tileImage }) => {
-  console.log(tileImage)
   return (
     <a
       href={project.link}

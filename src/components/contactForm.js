@@ -10,7 +10,7 @@ class ContactForm extends React.Component {
     e.preventDefault()
     const name = e.target.elements.name.value
     if (name) {
-      console.log(name)
+      // console.log(name)
       // this.props.handleShowForm()
       this.props.handleDisplaySubmitMsg()
       this.props.handleHideForm()
