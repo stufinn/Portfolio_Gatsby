@@ -9,6 +9,10 @@
   @apply mb-3 last:mb-0;
 }
 
+.contactPage a {
+  @apply no-underline text-white text-3xl hover:text-main;
+}
+
 @tailwind components;
 @tailwind utilities;
 

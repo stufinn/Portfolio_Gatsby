@@ -10,7 +10,10 @@ export default ({ project, tileImage }) => {
       className="projectTile"
     >
       {/* <div className="projectTile__projectName">{project.name}</div> */}
-      <Img className="projectTile__image" fixed={tileImage.fixed} />
+      <Img
+        className="projectTile__image opacity-100 hover:opacity-50 rounded-md"
+        fixed={tileImage.fixed}
+      />
     </a>
   )
 }

@@ -15,17 +15,17 @@ const Contact = ({ data }) => (
     <div>
       <h2 className="projectsTitle">Let's Connect!</h2>
 
-      <div className="contactPage">
+      <div className="contactPage grid gap-y-5 mt-10 text-center">
         <h3>phone</h3>
-        <p>
-          <a href="tel:+18072200856">807.220.0856</a>
-        </p>
+
+        <a href="tel:+18072200856">807.220.0856</a>
+
         <h3>email</h3>
-        <p>
-          <a href="mailto:stufinn@gmail.com?subject=Website">
-            stufinn@gmail.com
-          </a>
-        </p>
+
+        <a href="mailto:stu.finn@gmail.com?subject=Website">
+          stu.finn@gmail.com
+        </a>
+
         {/* <h3>other</h3>
 
         <div className="contactPage__iconContainer">

@@ -36,8 +36,8 @@ const Portfolio = ({ data }) => {
         <meta charSet="utf-8" /> <title>Portfolio</title>{" "}
       </Helmet>
       <div>
-        <h2 className="projectsTitle">Portfolio</h2>
-        <div className="projects">
+        <h2 className="projectsTitle text-center  mt-7 md:mt-0">Portfolio</h2>
+        <div className="projects grid grid-cols-1 lg:grid-cols-2 gap-5 mt-12">
           {projects.map(project => (
             <ProjectTile
               key={project.name}

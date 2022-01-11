@@ -9,7 +9,7 @@ class LinkButton extends React.Component {
 
   render() {
     return (
-      <div className="linkButtonContainer flex justify-center mt-7  ">
+      <div className="linkButtonContainer flex justify-center mt-7 font-roboto  ">
         <Link
           to={`/${this.props.linkToPage}`}
           className="linkButton text-tertiary hover:text-secondary text-4xl font-semibold p-4 rounded-2xl  bg-main relative "

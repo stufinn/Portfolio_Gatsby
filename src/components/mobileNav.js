@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 const MobileNav = () => (
-  <nav className="mobileNav grid md:hidden gap-x-7  justify-self-center items-center  mt-7">
+  <nav className="mobileNav grid md:hidden gap-x-7 gap-y-2  justify-self-center items-center  mt-7 text-xl">
     <Link className="mobileNav__link" to="/" activeStyle={{ color: "#35cb70" }}>
       Home
     </Link>

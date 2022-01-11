@@ -26,7 +26,7 @@ export default () => (
             </h1>
           </Link>
 
-          <h2 className="text-main">Developer</h2>
+          <h2 className="text-main mt-3">Web Developer</h2>
           <MobileNav />
         </div>
       </div>

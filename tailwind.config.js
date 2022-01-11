@@ -4,6 +4,7 @@ module.exports = {
     fontFamily: {
       body: ["PT Sans", "sans-serif"],
       heading: ["Roboto Slab"],
+      roboto: ["Roboto"],
     },
 
     extend: {

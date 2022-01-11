@@ -15,7 +15,7 @@ const About = ({ data }) => (
     </Helmet>
     {/* Profile photo with wrapper for gradient border */}
     <h2 className="projectsTitle">About Stu</h2>
-    <div className="grid  justify-items-center md:block">
+    <div className="grid  justify-items-center md:block mt-10">
       <div className="aboutPage__borderGradientContainer aboutFloat grid bg-gradient-to-br from-main to-quaternary w-fit p-1 rounded-full my-6 mr-5  ">
         <Img
           className="aboutPage__pic rounded-full"
