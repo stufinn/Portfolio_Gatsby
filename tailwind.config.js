@@ -1,7 +1,19 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    fontFamily: {
+      body: ["PT Sans", "sans-serif"],
+      heading: ["Roboto"],
+    },
+
+    extend: {
+      colors: {
+        main: "#35cb70",
+        secondary: "white",
+        tertiary: "#1f1f1f",
+        quaternary: "#1136b5",
+      },
+    },
   },
   plugins: [],
 }

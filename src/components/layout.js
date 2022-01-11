@@ -5,7 +5,7 @@ import Navbar from "./navbar"
 import ContentBox from "./contentBox"
 
 export default ({ children }) => (
-  <div className="layout">
+  <div className="layout min-h-screen  font-body font-normal ">
     {/* <div className={layoutStyles.mainContent}> */}
     <Navbar />
     <Header />

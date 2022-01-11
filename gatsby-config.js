@@ -54,9 +54,9 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Roboto Slab pro\:300,400`, // you can also specify font weights and styles
-          `Roboto pro\:300,400`,
-          `PT Sans pro\:300,400`,
+          `Roboto Slab\:300,400`, // you can also specify font weights and styles
+          `Roboto\:300,400`,
+          `PT Sans\:300,400`,
         ],
         display: "swap",
       },

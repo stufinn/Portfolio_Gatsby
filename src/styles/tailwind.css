@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading;
+  }
+
+  h1 {
+    @apply text-6xl;
+  }
+
+  h2 {
+    @apply text-white text-4xl font-extralight;
+  }
+
+  h3 {
+    @apply text-main text-3xl;
+  }
+  a:hover {
+    @apply text-main;
+  }
+
+  body {
+    @apply bg-tertiary text-white;
+  }
+}

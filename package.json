@@ -33,6 +33,7 @@
     "typescript": "^3.9.10"
   },
   "devDependencies": {
+    "netlify-cli": "^8.6.20",
     "prettier": "^1.19.1"
   },
   "repository": {
