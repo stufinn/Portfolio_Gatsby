@@ -7,7 +7,7 @@ import LinkButton from "../components/linkButton"
 
 const Index = () => {
   return (
-    <div className="homeContent">
+    <div className="homeContent ">
       <Helmet>
         {" "}
         <meta charSet="utf-8" /> <title>Stu Finn</title>{" "}
@@ -20,7 +20,7 @@ const Index = () => {
       {/* <HomeContent /> */}
 
       {/* <h3>I am</h3> */}
-      <p className="statement">
+      <p className="statement ">
         <span>Blazing fast,</span> modern and secure{" "}
         <span>custom-built websites</span> and web applications.
       </p>

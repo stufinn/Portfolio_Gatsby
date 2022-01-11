@@ -50,7 +50,17 @@ module.exports = {
         component: require.resolve(`${__dirname}/src/components/layout`),
       },
     },
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Roboto Slab pro\:300,400`, // you can also specify font weights and styles
+          `Roboto pro\:300,400`,
+          `PT Sans pro\:300,400`,
+        ],
+        display: "swap",
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -63,5 +73,6 @@ module.exports = {
         respectDNT: true,
       },
     },
+    `gatsby-plugin-postcss`,
   ],
 }
