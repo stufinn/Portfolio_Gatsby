@@ -11,15 +11,15 @@
   }
 
   h1 {
-    @apply text-6xl;
+    @apply text-7xl;
   }
 
   h2 {
-    @apply text-white text-4xl font-extralight;
+    @apply text-white text-5xl font-extralight;
   }
 
   h3 {
-    @apply text-main text-3xl;
+    @apply text-main text-5xl;
   }
   a:hover {
     @apply text-main;
@@ -27,5 +27,11 @@
 
   body {
     @apply bg-tertiary text-white;
+  }
+}
+
+@layer utilities {
+  .redBorder {
+    @apply border border-red-500;
   }
 }
