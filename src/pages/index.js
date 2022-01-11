@@ -5,9 +5,13 @@ import LinkButton from "../components/linkButton"
 
 // const sayHello = () =>
 
+const Highlight = ({ children }) => (
+  <span className="text-main text-5xl">{children}</span>
+)
+
 const Index = () => {
   return (
-    <div className="text-center w-11/12">
+    <div className="text-center w-11/12 flex flex-col  items-center">
       <Helmet>
         {" "}
         <meta charSet="utf-8" /> <title>Stu Finn</title>{" "}
@@ -20,12 +24,12 @@ const Index = () => {
       {/* <HomeContent /> */}
 
       {/* <h3>I am</h3> */}
-      <p className="statement  ">
-        <span>Blazing fast,</span> modern and secure{" "}
-        <span>custom-built websites</span> and web applications.
+      <p className="statement mb-7 text-4xl max-w-md">
+        <Highlight>Blazing fast,</Highlight> modern and secure{" "}
+        <Highlight>custom-built websites</Highlight> and web applications.
       </p>
 
-      <div className="index__links">
+      <div className="index__links mt-24">
         <LinkButton buttonText="Get In Touch!" linkToPage="contact" />
       </div>
 

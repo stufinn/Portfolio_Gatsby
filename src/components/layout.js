@@ -8,7 +8,7 @@ export default ({ children }) => (
     {/* <div className={layoutStyles.mainContent}> */}
     <Navbar />
     <Header />
-    <div className="flex-grow border grid justify-items-center mt-5 md:mt-0 md:w-8/12 self-center">
+    <div className="flex-grow  grid justify-items-center mt-5 md:mt-0 md:w-8/12 self-center">
       {children}
     </div>
 

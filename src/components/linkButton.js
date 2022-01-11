@@ -5,17 +5,15 @@ import { Link } from "gatsby"
 class LinkButton extends React.Component {
   constructor(props) {
     super(props)
-    this.handleClick = this.handleClick.bind(this)
-  }
-
-  handleClick() {
-    alert("Link to contact page!")
   }
 
   render() {
     return (
-      <div className="linkButtonContainer">
-        <Link to={`/${this.props.linkToPage}`} className="linkButton">
+      <div className="linkButtonContainer flex justify-center mt-7  ">
+        <Link
+          to={`/${this.props.linkToPage}`}
+          className="linkButton text-tertiary hover:text-secondary text-4xl font-semibold p-4 rounded-2xl  bg-main relative "
+        >
           {this.props.buttonText}
         </Link>
       </div>
