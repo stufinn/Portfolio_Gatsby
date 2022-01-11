@@ -1,4 +1,14 @@
 @tailwind base;
+
+.aboutFloat {
+  @apply md:float-left;
+  shape-outside: circle(50%);
+}
+
+.aboutText p {
+  @apply mb-3 last:mb-0;
+}
+
 @tailwind components;
 @tailwind utilities;
 
@@ -23,6 +33,10 @@
   }
   a:hover {
     @apply text-main;
+  }
+
+  p a {
+    @apply text-main underline hover:text-quaternary;
   }
 
   body {

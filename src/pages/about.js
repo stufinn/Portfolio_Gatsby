@@ -3,56 +3,64 @@ import Helmet from "react-helmet"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 
+const Emph = ({ children }) => (
+  <span className="text-main text-3xl">{children}</span>
+)
+
 const About = ({ data }) => (
-  <div className="aboutPage">
+  <div className="aboutPage flex flex-col items-center">
     <Helmet>
-      {" "}
-      <meta charSet="utf-8" /> <title>About Stu</title>{" "}
+      <meta charSet="utf-8" />
+      <title>About Stu</title>{" "}
     </Helmet>
     {/* Profile photo with wrapper for gradient border */}
     <h2 className="projectsTitle">About Stu</h2>
-    <div className="aboutPage__borderGradientContainer">
-      <Img
-        className="aboutPage__pic"
-        fixed={data.stuImg.edges[0].node.childImageSharp.fixed}
-        title="Stu Finn"
-        alt="Stu Finn"
-      />
+    <div className="grid  justify-items-center md:block">
+      <div className="aboutPage__borderGradientContainer aboutFloat grid bg-gradient-to-br from-main to-quaternary w-fit p-1 rounded-full my-6 mr-5  ">
+        <Img
+          className="aboutPage__pic rounded-full"
+          fixed={data.stuImg.edges[0].node.childImageSharp.fixed}
+          title="Stu Finn"
+          alt="Stu Finn"
+        />
+      </div>
+      <div className="aboutPage__text aboutText text-2xl">
+        <p>
+          Stu is <Emph className="aboutPage--emph">software developer</Emph>{" "}
+          based in Northwestern Ontario, Canada.
+        </p>
+        <p>
+          He has a passion for creating <Emph>interesting</Emph>,{" "}
+          <Emph>helpful</Emph>, and hopefully even <Emph>beautiful</Emph> things
+          with <Emph>code</Emph>.
+        </p>{" "}
+        <p>
+          Stu has background in web development, an undergrad in biology and
+          international development, as well as a masters degree in
+          environmental studies. He am also trained as a project manager.
+        </p>
+        <p>
+          The websites that Stu creates are often inspired by{" "}
+          <Emph>nature</Emph> and <Emph>minimalistic design</Emph>. He loves
+          building products that look amazing and are easy to use.
+        </p>
+        <p>
+          If you are interested in Stu's work, please check out{" "}
+          <Emph>
+            <Link to="/portfolio" className="aboutPage--emph">
+              his portfolio
+            </Link>
+          </Emph>{" "}
+          or{" "}
+          <Emph>
+            <Link to="/contact" className="aboutPage--emph">
+              get in touch
+            </Link>
+          </Emph>
+          !
+        </p>
+      </div>
     </div>
-    <div className="aboutPage__text"></div>
-    <p>
-      I'm a <span className="aboutPage--emph">software developer</span> based in
-      Northwestern Ontario, Canada.
-    </p>
-    <p>
-      I have a passion for creating{" "}
-      <span className="aboutPage--emph">interesting</span>,{" "}
-      <span className="aboutPage--emph">helpful</span>, and hopefully even{" "}
-      <span className="aboutPage--emph">beautiful</span> things with{" "}
-      <span className="aboutPage--emph">code</span>.
-    </p>{" "}
-    <p>
-      I have a background in web development, an undergrad in biology and
-      international development, as well as a masters degree in environmental
-      studies. I am also trained as a project manager.
-    </p>
-    <p>
-      The websites that I create are often inspired by{" "}
-      <span className="aboutPage--emph">nature</span> and{" "}
-      <span className="aboutPage--emph">minimalistic design</span>. I love
-      building products that look amazing and are easy to use.
-    </p>
-    <p>
-      If you are interested in my work, please check out{" "}
-      <Link to="/portfolio" className="aboutPage--emph">
-        my portfolio
-      </Link>{" "}
-      or{" "}
-      <Link to="/contact" className="aboutPage--emph">
-        get in touch
-      </Link>
-      !
-    </p>
   </div>
 )
 
