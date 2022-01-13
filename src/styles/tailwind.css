@@ -46,6 +46,10 @@
   body {
     @apply bg-tertiary text-white;
   }
+
+  html {
+    @apply scroll-smooth;
+  }
 }
 
 @layer utilities {
