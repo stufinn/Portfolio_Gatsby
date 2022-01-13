@@ -26,7 +26,7 @@ const ContactFormNew = () => {
       </Label>
       <button
         type="submit"
-        className="bg-main hover:bg-white hover:text-main mt-5 w-fit px-5 pb-2 pt-1 justify-self-end rounded-md "
+        className="bg-main hover:bg-white font-semibold  text-tertiary mt-5 w-fit px-5 pb-2 pt-1 justify-self-end rounded-md "
       >
         Submit
       </button>

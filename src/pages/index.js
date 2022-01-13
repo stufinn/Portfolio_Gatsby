@@ -50,6 +50,14 @@ const Index = () => {
           <EmphIndex className="text-4xl">looking for part time work</EmphIndex>{" "}
           as a software developer (remote).
         </p>
+        <div className="mt-10 grid ">
+          <Link
+            to="/about"
+            className=" bg-main hover:bg-white font-semibold  text-tertiary w-fit px-5 pb-2 pt-1 justify-self-end rounded-md  "
+          >
+            Learn More
+          </Link>
+        </div>
       </TextContainer>
 
       <TextContainer title="My Work">
