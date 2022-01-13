@@ -9,24 +9,24 @@ const Portfolio = ({ data }) => {
 
   const projects = [
     {
-      name: "Sioux Lookout Minor Hockey Association",
-      link: "https://slmha.net",
-      imageRef: data.slmhaImg.edges[0].node.childImageSharp,
+      name: "The Hub Roastery",
+      link: "https://www.thehubroastery.ca",
+      imageRef: data.hubRoasteryImg,
     },
     {
-      name: "EWRB",
-      link: "https://www.ewrb.ca",
-      imageRef: data.ewrbImg.edges[0].node.childImageSharp,
+      name: "Sioux Lookout Regional Physician Services Inc.",
+      link: "https://www.siouxlookoutareadocs.ca/",
+      imageRef: data.SLRPSIImg,
     },
     {
-      name: "ScriptBae",
-      link: "https://www.scriptbae.com",
-      imageRef: data.scriptbaeImg.edges[0].node.childImageSharp,
+      name: "Northern Ontario First Nations Enviroment Conference",
+      link: "https://www.nofnec.ca/",
+      imageRef: data.NOFNECImg,
     },
     {
-      name: "Reilly Scott's Electronic Press Kit",
-      link: "https://www.reillyscott.ca/epk",
-      imageRef: data.epkImg.edges[0].node.childImageSharp,
+      name: "WINKS Youth Program",
+      link: "https://www.winksyouthprogram.com/",
+      imageRef: data.WINKSYouthImg,
     },
   ]
   return (
@@ -35,9 +35,11 @@ const Portfolio = ({ data }) => {
         {" "}
         <meta charSet="utf-8" /> <title>Portfolio</title>{" "}
       </Helmet>
-      <div>
-        <h2 className="projectsTitle text-center  mt-7 md:mt-0">Portfolio</h2>
-        <div className="projects grid grid-cols-1 lg:grid-cols-2 gap-5 mt-12">
+      <div className="mx-5">
+        <h1 className="projectsTitle text-center text-5xl md:text-6xl mt-7 md:mt-0">
+          Recent Client Projects
+        </h1>
+        <div className="projects grid grid-cols-1 lg:grid-cols-2 gap-y-9 gap-x-11 mt-12 mb-20">
           {projects.map(project => (
             <ProjectTile
               key={project.name}
@@ -99,6 +101,32 @@ export const pageQuery = graphql`
             }
           }
         }
+      }
+    }
+    hubRoasteryImg: file(
+      relativePath: { eq: "images/projects/Hub Roastery.png" }
+    ) {
+      id
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED)
+      }
+    }
+    SLRPSIImg: file(relativePath: { eq: "images/projects/SLRPSI.png" }) {
+      id
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED)
+      }
+    }
+    NOFNECImg: file(relativePath: { eq: "images/projects/NOFNEC.png" }) {
+      id
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED)
+      }
+    }
+    WINKSYouthImg: file(relativePath: { eq: "images/projects/WINKS.png" }) {
+      id
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED)
       }
     }
   }
