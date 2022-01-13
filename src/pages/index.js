@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import Helmet from "react-helmet"
+import ContactFormNew from "../components/ContactFormNew"
 import { Emph, H1 } from "../components/HelperComponents"
 import LinkButton from "../components/linkButton"
 // import HomeContent from "../components/homeContent"
@@ -25,7 +26,7 @@ const TextContainer = ({ children, title = "" }) => (
 
 const Index = () => {
   return (
-    <div className="text-3xl md:text-4xl ">
+    <div className="text-3xl md:text-4xl mb-20 ">
       <Helmet>
         {" "}
         <meta charSet="utf-8" /> <title>Stu Finn, Web Developer</title>{" "}
@@ -57,7 +58,11 @@ const Index = () => {
           .
         </p>
       </TextContainer>
-      <TextContainer title="Contact Stu"></TextContainer>
+      <TextContainer title="Contact Me">
+        <div className="grid justify-items-center">
+          <ContactFormNew />
+        </div>
+      </TextContainer>
 
       {/* <div className="index__links mt-24">
         <LinkButton buttonText="Get In Touch!" linkToPage="contact" />
