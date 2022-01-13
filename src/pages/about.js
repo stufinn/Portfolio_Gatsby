@@ -26,7 +26,7 @@ const LogoLink = ({ url = "/", children }) => (
 
 const About = ({ data }) => {
   return (
-    <div className="aboutPage flex flex-col items-center mb-20 mx-3">
+    <div className="aboutPage flex flex-col items-center mx-3">
       <Helmet>
         <meta charSet="utf-8" />
         <title>About Stu Finn</title>{" "}

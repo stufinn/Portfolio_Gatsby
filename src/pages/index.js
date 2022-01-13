@@ -26,7 +26,7 @@ const TextContainer = ({ children, title = "" }) => (
 
 const Index = () => {
   return (
-    <div className="text-3xl md:text-4xl mb-20 ">
+    <div className="text-3xl md:text-4xl  ">
       <Helmet>
         {" "}
         <meta charSet="utf-8" /> <title>Stu Finn, Web Developer</title>{" "}

@@ -4,7 +4,7 @@ import Header from "./header"
 import Navbar from "./navbar"
 
 export default ({ children }) => (
-  <div className="layout  flex flex-col min-h-screen  font-body font-normal  ">
+  <div className="layout  flex flex-col min-h-screen  font-body font-normal mb-20  ">
     {/* <div className={layoutStyles.mainContent}> */}
     <Navbar />
     <Header />

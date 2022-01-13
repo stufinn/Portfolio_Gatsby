@@ -10,7 +10,7 @@ export default ({ project, tileImage }) => {
       href={project.link}
       target="_blank"
       rel="noopener noreferrer"
-      className="projectTile "
+      className="projectTile relative z-0 "
     >
       {/* <div className="projectTile__projectName">{project.name}</div> */}
       <GatsbyImage

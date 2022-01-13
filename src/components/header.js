@@ -20,6 +20,7 @@ export default () => (
           <Link
             className="header__link flex  justify-center md:justify-start "
             to="/"
+            title="Home"
           >
             <h1 className=" font-heading mainName  border-b-2 border-main w-fit px-4 md:pl-0 md:pr-12 pb-1 text-center">
               {data.site.siteMetadata.title}

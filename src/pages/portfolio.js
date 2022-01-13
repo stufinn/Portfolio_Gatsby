@@ -39,7 +39,7 @@ const Portfolio = ({ data }) => {
         <h1 className="projectsTitle text-center text-5xl md:text-6xl mt-7 md:mt-0">
           Recent Client Projects
         </h1>
-        <div className="projects grid grid-cols-1 lg:grid-cols-2 gap-y-9 gap-x-11 mt-12 mb-20">
+        <div className="projects grid grid-cols-1 lg:grid-cols-2 gap-y-9 gap-x-11 mt-12 max-w-6xl">
           {projects.map(project => (
             <ProjectTile
               key={project.name}

@@ -28,7 +28,7 @@ export default () => (
       }
     `}
     render={data => (
-      <nav className="navbar  hidden md:block fixed top-0 right-0   mt-6 mr-9">
+      <nav className="navbar  hidden md:block absolute z-20 top-0 right-0   mt-6 mr-9">
         <ul className=" px-3 pl-4 leading-normal border-l border-main border-l-2">
           {data.site.siteMetadata.menuLinks.map(link => (
             <ListLink to={link.link} key={link.name}>

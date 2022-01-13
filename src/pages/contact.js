@@ -1,6 +1,8 @@
 import React from "react"
 import Helmet from "react-helmet"
 import { graphql } from "gatsby"
+import ContactFormNew from "../components/ContactFormNew"
+import { H1, H2 } from "../components/HelperComponents"
 // import Img from "gatsby-image"
 
 // import ContactForm from "../components/contactForm"
@@ -13,18 +15,13 @@ const Contact = ({ data }) => (
       <meta charSet="utf-8" /> <title>Contact</title>{" "}
     </Helmet>
     <div>
-      <h2 className="projectsTitle">Let's Connect!</h2>
+      <H1 className="projectsTitle text-center">Let's Connect!</H1>
 
       <div className="contactPage grid gap-y-5 mt-10 text-center">
-        <h3>phone</h3>
-
-        <a href="tel:+18072200856">807.220.0856</a>
-
-        <h3>email</h3>
-
-        <a href="mailto:stu.finn@gmail.com?subject=Website">
-          stu.finn@gmail.com
-        </a>
+        <H2 className="text-4xl text-left">Send Me a Message</H2>
+        <div className="grid justify-items-center text-3xl">
+          <ContactFormNew />
+        </div>
 
         {/* <h3>other</h3>
 

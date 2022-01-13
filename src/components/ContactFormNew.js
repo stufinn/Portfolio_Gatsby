@@ -13,7 +13,7 @@ const ContactFormNew = () => {
       name="contact"
       method="POST"
       data-netlify="true"
-      className="grid gap-y-3 text-left  w-full max-w-3xl"
+      className="grid gap-y-3 text-left  w-full max-w-2xl"
     >
       <Label text="Your name:">
         <input type="text" name="name" required />
@@ -28,7 +28,7 @@ const ContactFormNew = () => {
         type="submit"
         className="bg-main hover:bg-white hover:text-main mt-5 w-fit px-5 pb-2 pt-1 justify-self-end rounded-md "
       >
-        Send
+        Submit
       </button>
     </form>
   )
