@@ -13,8 +13,17 @@ const Emph = ({ children }) => (
   <span className="text-main text-3xl">{children}</span>
 )
 
+const H1 = ({ children, className = "" }) => (
+  <h1 className={` text-5xl md:text-6xl text-center ${className}`}>
+    {children}
+  </h1>
+)
+
 const H2 = ({ children, onClick = null, className = "" }) => (
-  <h2 onClick={onClick} className={`mt-10 mb-5 text-main ${className}`}>
+  <h2
+    onClick={onClick}
+    className={`mt-10 mb-5 text-4xl md:text-5xl text-main ${className}`}
+  >
     {children}
   </h2>
 )
@@ -35,13 +44,13 @@ const LogoLink = ({ url = "/", children }) => (
 
 const About = ({ data }) => {
   return (
-    <div className="aboutPage flex flex-col items-center mb-20">
+    <div className="aboutPage flex flex-col items-center mb-20 mx-3">
       <Helmet>
         <meta charSet="utf-8" />
         <title>About Stu Finn</title>{" "}
       </Helmet>
       {/* Profile photo with wrapper for gradient border */}
-      <h1 className="projectsTitle  text-5xl mt-10 md:mt-0">About Stu</h1>
+      <H1 className="mt-10 md:mt-0">About Stu</H1>
       <div className="grid  justify-items-center md:block mt-5 md:mt-10">
         <div className="aboutPage__borderGradientContainer aboutFloat grid bg-gradient-to-br from-main to-quaternary w-fit p-1 rounded-full my-6 mr-5  ">
           <Img
@@ -122,9 +131,9 @@ const About = ({ data }) => {
               !
             </p> */}
           </div>
-          <h1 className="cursor-pointer text-center mt-20" id="more">
+          <H1 className="mt-20" id="more">
             Even More Info
-          </h1>
+          </H1>
           <div>
             <H2>The Stack</H2>
             <p>
