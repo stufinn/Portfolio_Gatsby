@@ -8,25 +8,7 @@ import {
   AiFillTwitterCircle,
   AiOutlineArrowDown,
 } from "react-icons/ai"
-
-const Emph = ({ children }) => (
-  <span className="text-main text-3xl">{children}</span>
-)
-
-const H1 = ({ children, className = "" }) => (
-  <h1 className={` text-5xl md:text-6xl text-center ${className}`}>
-    {children}
-  </h1>
-)
-
-const H2 = ({ children, onClick = null, className = "" }) => (
-  <h2
-    onClick={onClick}
-    className={`mt-10 mb-5 text-4xl md:text-5xl text-main ${className}`}
-  >
-    {children}
-  </h2>
-)
+import { Emph, H1, H2 } from "../components/HelperComponents"
 
 const Li = ({ children }) => <li className="list-disc ml-10">{children}</li>
 
