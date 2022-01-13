@@ -43,6 +43,10 @@
     @apply text-main underline hover:text-quaternary;
   }
 
+  p {
+    @apply mb-2;
+  }
+
   body {
     @apply bg-tertiary text-white;
   }
