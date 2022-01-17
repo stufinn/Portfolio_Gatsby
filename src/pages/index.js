@@ -28,7 +28,7 @@ const TextContainer = ({ children, title = "" }) => (
 
 const Index = () => {
   return (
-    <div className="text-3xl md:text-4xl  ">
+    <div className="text-3xl md:text-4xl mx-2">
       <Helmet>
         {" "}
         <meta charSet="utf-8" /> <title>Stu Finn, Web Developer</title>{" "}
@@ -55,7 +55,7 @@ const Index = () => {
       </HorizontalSection>
 
       <HorizontalSection title="Portfolio" vertical className="mt-10">
-        <p className="items-center max-w-xl mb-0 ">
+        <p className="">
           Check out some of my <Link to="/portfolio">recent projects</Link>.
         </p>
       </HorizontalSection>
