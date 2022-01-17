@@ -31,13 +31,30 @@ const ContactFormNew = () => {
       </div>
       {/* End HP */}
       <Label text="Your name:">
-        <input type="text" name="name" required />
+        <input
+          type="text"
+          name="name"
+          placeholder="Your name"
+          required
+          className="pl-1"
+        />
       </Label>
       <Label text="Your email:">
-        <input type="email" name="email" required />
+        <input
+          type="email"
+          name="email"
+          className="pl-1"
+          required
+          placeholder="Your email address"
+        />
       </Label>
       <Label text="Message:">
-        <textarea name="message" required placeholder="Your Message"></textarea>
+        <textarea
+          name="message"
+          required
+          placeholder="Your Message"
+          className="pl-1"
+        ></textarea>
       </Label>
       <button
         type="submit"
@@ -45,6 +62,9 @@ const ContactFormNew = () => {
       >
         Submit
       </button>
+      <p className="text-xl">
+        <sup>*</sup>All fields required
+      </p>
     </form>
   )
 }

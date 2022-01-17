@@ -9,6 +9,7 @@ import {
   AiOutlineArrowDown,
 } from "react-icons/ai"
 import { Emph, H1, H2 } from "../components/HelperComponents"
+import HorizontalSection from "../components/HorizontalSection"
 
 const Li = ({ children }) => <li className="list-disc ml-10">{children}</li>
 
@@ -34,7 +35,7 @@ const About = ({ data }) => {
       {/* Profile photo with wrapper for gradient border */}
       <H1 className="mt-10 md:mt-0">About Stu</H1>
       <div className="grid  justify-items-center md:block mt-5 md:mt-10">
-        <div className="aboutPage__borderGradientContainer aboutFloat grid bg-gradient-to-br from-main to-quaternary w-fit p-1 rounded-full my-6 mr-5  ">
+        <div className="aboutPage__borderGradientContainer aboutFloat grid bg-gradient-to-br from-main to-quaternary w-fit p-1 rounded-full my-6 mr-5   ">
           <Img
             className="aboutPage__pic rounded-full"
             fixed={data.stuImg.edges[0].node.childImageSharp.fixed}
@@ -55,48 +56,53 @@ const About = ({ data }) => {
             </a>
             , a small design and development agency that is focused on creating
             entirely custom and easy-to-use websites.{" "}
-            <a href="#more">
-              <p className="mt-2 text-right">
-                More About Stu <AiOutlineArrowDown className="inline" />
-              </p>
-            </a>
           </p>
+          <a
+            href="#more"
+            className="mt-2 text-right text-main hover:text-white"
+          >
+            <div className="mt-2 text-right">
+              More About Stu <AiOutlineArrowDown className="inline" />
+            </div>
+          </a>
           <H2 className="animate-pulse mt-0">*Hire Me!*</H2>
           <p>
             I am currently <Emph>looking for work</Emph> as a part time
             front-end developer for a remote-first company.
           </p>
-          <div>
-            <H2>Get In Touch</H2>
 
-            <p>
-              For more info check me out on{" "}
-              <LogoLink url="https://github.com/stufinn/">
-                <LogoContainer>
-                  <AiFillGithub />
-                </LogoContainer>
-                GitHub
-              </LogoLink>
-              ,{" "}
-              <LogoLink url="https://www.linkedin.com/in/stufinn/">
-                <LogoContainer>
-                  <AiFillLinkedin />
-                </LogoContainer>
-                LinkedIn
-              </LogoLink>
-              ,{" "}
-              <LogoLink url="https://twitter.com/stufinn">
-                <LogoContainer>
-                  <AiFillTwitterCircle />
-                </LogoContainer>
-                Twitter
-              </LogoLink>
-              , or just{" "}
-              <Emph>
-                <Link to="/contact">drop me a line</Link>
-              </Emph>
-              !
-            </p>
+          <div className="clear-both grid lg:justify-items-center">
+            <HorizontalSection title="Get in Touch" titleClass="">
+              <p>
+                For more info check me out on{" "}
+                <LogoLink url="https://github.com/stufinn/">
+                  <LogoContainer>
+                    <AiFillGithub />
+                  </LogoContainer>
+                  GitHub
+                </LogoLink>
+                ,{" "}
+                <LogoLink url="https://www.linkedin.com/in/stufinn/">
+                  <LogoContainer>
+                    <AiFillLinkedin />
+                  </LogoContainer>
+                  LinkedIn
+                </LogoLink>
+                ,{" "}
+                <LogoLink url="https://twitter.com/stufinn">
+                  <LogoContainer>
+                    <AiFillTwitterCircle />
+                  </LogoContainer>
+                  Twitter
+                </LogoLink>
+                , or just{" "}
+                <Emph>
+                  <Link to="/contact">drop me a line</Link>
+                </Emph>
+                !
+              </p>
+            </HorizontalSection>
+
             {/* <p>
               If you are interested in Stu's work, please check out{" "}
               <Emph>
@@ -113,10 +119,10 @@ const About = ({ data }) => {
               !
             </p> */}
           </div>
+
           <div id="more">
-            <H1 className="mt-20">Even More Info</H1>
-            <div>
-              <H2>The Stack</H2>
+            <H2 className="mt-20 mb-0">More Info:</H2>
+            <HorizontalSection title="The Stack">
               <p>
                 These days, my web technologies of choice are{" "}
                 <Emph> JavaScript, React, Gatsby, Node.js</Emph>, and of course{" "}
@@ -124,7 +130,8 @@ const About = ({ data }) => {
                 there; as a self-taught developer, I am always looking for ways
                 to strengthen and extend my skillset.{" "}
               </p>
-              <H2>The Before (Dev) Times</H2>
+            </HorizontalSection>
+            <HorizontalSection title={<span>Pre-Dev</span>}>
               <p>
                 Before to becoming a full time developer in 2018, I was
                 alternately a project manager, a museum curator, an
@@ -133,8 +140,8 @@ const About = ({ data }) => {
                 Development), a masters degree in Environmental Studies, and a
                 certification in Project Management. I lots of stuff!
               </p>
-              <H2>The Fun Stuff</H2>
-
+            </HorizontalSection>
+            <HorizontalSection title="Fun Stuff">
               <p>
                 I am a quirky mix between tech-kid and outdoorsman. When I'm not
                 building things at my computer I love spending time with my
@@ -157,13 +164,12 @@ const About = ({ data }) => {
                     blast doing them.
                   </Li>
                   <Li>
-                    On warm summer evenings you can usually find me sitting
-                    around a camp fire with friends, often with a guitar in my
-                    lap.
+                    On summer evenings you can often find me sitting around a
+                    camp fire with friends with a guitar in my lap.
                   </Li>
                 </ul>
               </div>
-            </div>
+            </HorizontalSection>
           </div>
         </div>
       </div>
