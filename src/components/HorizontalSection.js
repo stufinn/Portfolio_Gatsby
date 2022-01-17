@@ -7,8 +7,12 @@ const HorizontalSection = ({
   className = "",
 }) => {
   return (
-    <div className={`flex justify-start ${className}`}>
-      <div className={`flex flex-col ${vertical ? "" : "lg:flex-row"}  mt-10`}>
+    <div className={`flex justify-stretch ${className}`}>
+      <div
+        className={`flex flex-col ${
+          vertical ? "" : "lg:flex-row"
+        }  mt-10 width-full`}
+      >
         <div
           className={`grid pb-1 mb-3 border-b-2 ${
             vertical
@@ -18,7 +22,9 @@ const HorizontalSection = ({
         >
           <h2 className=" font-bold self-start">{title}</h2>
         </div>
-        <p className="items-center max-w-xl mb-0 ">{children}</p>
+        <div className={`items-center ${vertical ? "" : "max-w-xl"}  mb-0`}>
+          {children}
+        </div>
       </div>
     </div>
   )
