@@ -11,22 +11,45 @@ const Portfolio = ({ data }) => {
     {
       name: "The Hub Roastery",
       link: "https://www.thehubroastery.ca",
+      builtWith: "GatsbyJS, React, Tailwind CSS, Shopify, Sanity CMS",
+      projectDescription: null,
       imageRef: data.hubRoasteryImg,
+      design: {
+        by: "BlueBird Design",
+        url: "https://www.bluebirddesigncompany.com/",
+      },
     },
     {
       name: "Sioux Lookout Regional Physician Services Inc.",
       link: "https://www.siouxlookoutareadocs.ca/",
+      builtWith: "GatsbyJS, React, Tailwind CSS, Sanity CMS",
       imageRef: data.SLRPSIImg,
+      design: {
+        by: "BlueBird Design",
+        url: "https://www.bluebirddesigncompany.com/",
+      },
     },
     {
       name: "Northern Ontario First Nations Enviroment Conference",
       link: "https://www.nofnec.ca/",
+      builtWith: "GatsbyJS, React, Tailwind CSS, Sanity CMS",
+      projectDescription: null,
       imageRef: data.NOFNECImg,
+      design: {
+        by: "BlueBird Design",
+        url: "https://www.bluebirddesigncompany.com/",
+      },
     },
     {
       name: "WINKS Youth Program",
       link: "https://www.winksyouthprogram.com/",
+      builtWith: "GatsbyJS, React, Tailwind CSS, Sanity CMS",
+      projectDescription: null,
       imageRef: data.WINKSYouthImg,
+      design: {
+        by: "BlueBird Design",
+        url: "https://www.bluebirddesigncompany.com/",
+      },
     },
   ]
   return (
@@ -39,7 +62,7 @@ const Portfolio = ({ data }) => {
         <h1 className="projectsTitle text-center text-5xl md:text-6xl mt-7 md:mt-0">
           Recent Client Projects
         </h1>
-        <div className="projects grid grid-cols-1 lg:grid-cols-2 gap-y-9 gap-x-11 mt-12 max-w-6xl">
+        <div className="projects grid grid-cols-1  gap-y-9 gap-x-11 mt-12 max-w-3xl">
           {projects.map(project => (
             <ProjectTile
               key={project.name}

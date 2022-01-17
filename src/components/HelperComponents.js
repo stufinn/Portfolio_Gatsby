@@ -35,3 +35,14 @@ export const LogoLink = ({ url = "/", children }) => (
 export const LogoContainer = ({ children }) => (
   <span className="inline-flex flex-col mr-1 text-3xl ">{children}</span>
 )
+
+export const TextLink = ({ text, url }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-main underline hover:text-secondary"
+  >
+    {text}
+  </a>
+)
