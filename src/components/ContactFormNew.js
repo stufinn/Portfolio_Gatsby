@@ -30,7 +30,7 @@ const ContactFormNew = () => {
         <input name="bot-field" />
       </div>
       {/* End HP */}
-      <Label text="Your name:">
+      <Label text="">
         <input
           type="text"
           name="name"
@@ -39,16 +39,16 @@ const ContactFormNew = () => {
           className="pl-1"
         />
       </Label>
-      <Label text="Your email:">
+      <Label text="">
         <input
           type="email"
           name="email"
           className="pl-1"
           required
-          placeholder="Your email address"
+          placeholder="Your email"
         />
       </Label>
-      <Label text="Message:">
+      <Label text="">
         <textarea
           name="message"
           required
