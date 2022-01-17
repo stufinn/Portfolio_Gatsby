@@ -85,22 +85,6 @@ const About = ({ data }) => {
                 front-end developer.
               </p>
             </HorizontalSection>
-
-            {/* <p>
-              If you are interested in Stu's work, please check out{" "}
-              <Emph>
-                <Link to="/portfolio" className="aboutPage--emph">
-                  his portfolio
-                </Link>
-              </Emph>{" "}
-              or{" "}
-              <Emph>
-                <Link to="/contact" className="aboutPage--emph">
-                  get in touch
-                </Link>
-              </Emph>
-              !
-            </p> */}
           </div>
 
           <div id="more">
@@ -144,14 +128,14 @@ const About = ({ data }) => {
                 </h3>
                 <ul className="mb-5 grid gap-y-2">
                   <Li>
-                    I love to travel ✈️. To date I've visited more than 20
+                    I love to travel ✈️! To date I've visited more than 20
                     countries and I am eager to do more.
                   </Li>
                   <Li>
-                    I am an enthusiastic sailor. To date I have competed in a
-                    300-mile and a 90-mile sailing race on Lake Ontario. I won a
-                    grand total of zero of those races, but I always have a
-                    blast doing them.
+                    I am an enthusiastic (if not very accomplished) sailor. To
+                    date I have competed in a 300-mile and a 90-mile sailing
+                    race on Lake Ontario. I won a grand total of zero of those
+                    races, but I always have a blast doing them.
                   </Li>
                   <Li>
                     On summer evenings you can often find me sitting around a
