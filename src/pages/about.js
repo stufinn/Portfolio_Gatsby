@@ -27,15 +27,16 @@ const LogoLink = ({ url = "/", children }) => (
 
 const About = ({ data }) => {
   return (
-    <div className="aboutPage flex flex-col items-center mx-3  max-w-7xl">
+    <div className="aboutPage flex flex-col items-center mx-3 text-2xl max-w-7xl">
       <Helmet>
         <meta charSet="utf-8" />
         <title>About Stu Finn</title>{" "}
       </Helmet>
       {/* Profile photo with wrapper for gradient border */}
-      <H1 className="mt-10 md:mt-0">About Stu</H1>
+
       <div className="grid  justify-items-center md:block mt-5 md:mt-10">
-        <div className="aboutPage__borderGradientContainer aboutFloat grid bg-gradient-to-br from-main to-quaternary w-fit p-1 rounded-full my-6 mr-5   ">
+        <div className="aboutPage__borderGradientContainer aboutFloat grid  w-fit p-1 rounded-full my-6 mr-5 relative   ">
+          <div className="absolute  top-0 right-0 bottom-0 left-0 bg-gradient-to-br from-main to-quaternary rounded-full animate-spin "></div>
           <Img
             className="aboutPage__pic rounded-full"
             fixed={data.stuImg.edges[0].node.childImageSharp.fixed}
@@ -43,36 +44,49 @@ const About = ({ data }) => {
             alt="Stu Finn"
           />
         </div>
-        <div className="aboutPage__text aboutText text-2xl">
-          <p>
-            I am a <Emph>software developer</Emph> from Ontario, Canada. I've
-            been building websites since 2017 and in 2019, I started{" "}
+        <div className="aboutPage__text aboutText">
+          <div className="text-2xl max-w-6xl lg:mt-20 ">
+            <p>
+              I am a <Emph>software developer</Emph> from Ontario, Canada. I've
+              been building websites since 2017 and in 2019, I started{" "}
+              <a
+                href="https://www.borealisweb.ca"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Borealis Web Development
+              </a>
+              , a small design and development agency that is focused on
+              creating entirely custom and easy-to-use websites.{" "}
+            </p>
             <a
-              href="https://www.borealisweb.ca"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#more"
+              className="mt-2 text-right text-main hover:text-white"
             >
-              Borealis Web Development
+              <div className="mt-2 text-right">
+                More About Stu <AiOutlineArrowDown className="inline" />
+              </div>
             </a>
-            , a small design and development agency that is focused on creating
-            entirely custom and easy-to-use websites.{" "}
-          </p>
-          <a
-            href="#more"
-            className="mt-2 text-right text-main hover:text-white"
-          >
-            <div className="mt-2 text-right">
-              More About Stu <AiOutlineArrowDown className="inline" />
-            </div>
-          </a>
-          <H2 className="animate-pulse mt-0">*Hire Me!*</H2>
-          <p>
-            I am currently <Emph>looking for work</Emph> as a part time
-            front-end developer for a remote-first company.
-          </p>
+          </div>
 
-          <div className="clear-both grid lg:justify-items-center">
-            <HorizontalSection title="Get in Touch" titleClass="">
+          <div className="clear-both grid lg:justify-items-center ">
+            <HorizontalSection
+              title="Hire Me!"
+              vertical
+              titleClass="text-center pb-2 animate-pulse"
+              className="max-w-4xl"
+            >
+              <p>
+                I am currently <Emph>looking for work</Emph> as a part time
+                front-end developer.
+              </p>
+            </HorizontalSection>
+            <HorizontalSection
+              title="Get in Touch"
+              vertical
+              titleClass="text-center pb-2"
+              className="max-w-4xl"
+            >
               <p>
                 For more info check me out on{" "}
                 <LogoLink url="https://github.com/stufinn/">
@@ -95,11 +109,11 @@ const About = ({ data }) => {
                   </LogoContainer>
                   Twitter
                 </LogoLink>
-                , or just{" "}
+                , or{" "}
                 <Emph>
-                  <Link to="/contact">drop me a line</Link>
+                  <Link to="/contact">send me a message</Link>
                 </Emph>
-                !
+                .
               </p>
             </HorizontalSection>
 
@@ -121,8 +135,8 @@ const About = ({ data }) => {
           </div>
 
           <div id="more">
-            <H2 className="mt-20 mb-0">More Info:</H2>
-            <HorizontalSection title="The Stack">
+            <H2 className="mt-20 mb-0"></H2>
+            <HorizontalSection title="My Stack">
               <p>
                 These days, my web technologies of choice are{" "}
                 <Emph> JavaScript, React, Gatsby, Node.js</Emph>, and of course{" "}
@@ -131,7 +145,14 @@ const About = ({ data }) => {
                 to strengthen and extend my skillset.{" "}
               </p>
             </HorizontalSection>
-            <HorizontalSection title={<span>Pre-Dev</span>}>
+            <HorizontalSection
+              title={
+                <span>
+                  Pre-Dev
+                  <br /> Experience
+                </span>
+              }
+            >
               <p>
                 Before to becoming a full time developer in 2018, I was
                 alternately a project manager, a museum curator, an
