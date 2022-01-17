@@ -2,28 +2,28 @@ import React from "react"
 import { Link } from "gatsby"
 
 const MobileNav = () => (
-  <nav className="mobileNav grid md:hidden gap-x-7 gap-y-2  justify-self-center items-center  mt-7 text-xl">
-    <Link className="mobileNav__link" to="/" activeStyle={{ color: "#35cb70" }}>
+  <nav className="mobileNav  flex justify-around md:hidden mx-3 justify-self-center items-center  mt-7 text-xl">
+    <Link className="mobileNav__link px-2" to="/" activeClassName="text-main">
       Home
     </Link>
     <Link
-      className="mobileNav__link"
+      className="mobileNav__link px-2"
       to="/about"
-      activeStyle={{ color: "#35cb70" }}
+      activeClassName="text-main"
     >
       About
     </Link>
     <Link
-      className="mobileNav__link"
+      className="mobileNav__link px-2"
       to="/portfolio"
-      activeStyle={{ color: "#35cb70" }}
+      activeClassName="text-main"
     >
       Portfolio
     </Link>
     <Link
-      className="mobileNav__link"
+      className="mobileNav__link px-2"
       to="/contact"
-      activeStyle={{ color: "#35cb70" }}
+      activeClassName="text-main"
     >
       Contact
     </Link>
