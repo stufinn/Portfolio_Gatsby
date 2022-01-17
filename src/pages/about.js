@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 import {
   AiFillGithub,
   AiFillLinkedin,
+  AiFillPhone,
   AiFillTwitterCircle,
   AiOutlineArrowDown,
 } from "react-icons/ai"
@@ -19,7 +20,7 @@ const LogoContainer = ({ children }) => (
 
 const LogoLink = ({ url = "/", children }) => (
   <Emph>
-    <a href={url} target="_blank" rel="noopener noreferrer">
+    <a href={url} target="_blank" rel="noopener noreferrer" className="block">
       {children}
     </a>
   </Emph>
@@ -35,7 +36,7 @@ const About = ({ data }) => {
       {/* Profile photo with wrapper for gradient border */}
 
       <div className="grid  justify-items-center md:block mt-5 md:mt-10">
-        <div className="aboutPage__borderGradientContainer aboutFloat grid  w-fit p-1 rounded-full my-6 mr-5 relative   ">
+        <div className="aboutPage__borderGradientContainer aboutFloat grid  w-fit p-1 rounded-full my-6 lg:mr-5 relative   ">
           <div className="absolute  top-0 right-0 bottom-0 left-0 bg-gradient-to-br from-main to-quaternary rounded-full animate-spin "></div>
           <Img
             className="aboutPage__pic rounded-full"
@@ -48,7 +49,10 @@ const About = ({ data }) => {
           <div className="text-2xl max-w-6xl lg:mt-20 ">
             <p>
               I am a <Emph>software developer</Emph> from Ontario, Canada. I've
-              been building websites since 2017 and in 2019, I started{" "}
+              been building websites since 2017.
+            </p>{" "}
+            <p className="mt-5">
+              In 2019, I started{" "}
               <a
                 href="https://www.borealisweb.ca"
                 target="_blank"
@@ -63,7 +67,7 @@ const About = ({ data }) => {
               href="#more"
               className="mt-2 text-right text-main hover:text-white"
             >
-              <div className="mt-2 text-right">
+              <div className="mt-5 text-right">
                 More About Stu <AiOutlineArrowDown className="inline" />
               </div>
             </a>
@@ -73,47 +77,12 @@ const About = ({ data }) => {
             <HorizontalSection
               title="Hire Me!"
               vertical
-              titleClass="text-center pb-2 animate-pulse"
+              titleClass="text-center pb-2 animate-pulse font-semibold"
               className="max-w-4xl"
             >
               <p>
                 I am currently <Emph>looking for work</Emph> as a part time
                 front-end developer.
-              </p>
-            </HorizontalSection>
-            <HorizontalSection
-              title="Get in Touch"
-              vertical
-              titleClass="text-center pb-2"
-              className="max-w-4xl"
-            >
-              <p>
-                For more info check me out on{" "}
-                <LogoLink url="https://github.com/stufinn/">
-                  <LogoContainer>
-                    <AiFillGithub />
-                  </LogoContainer>
-                  GitHub
-                </LogoLink>
-                ,{" "}
-                <LogoLink url="https://www.linkedin.com/in/stufinn/">
-                  <LogoContainer>
-                    <AiFillLinkedin />
-                  </LogoContainer>
-                  LinkedIn
-                </LogoLink>
-                ,{" "}
-                <LogoLink url="https://twitter.com/stufinn">
-                  <LogoContainer>
-                    <AiFillTwitterCircle />
-                  </LogoContainer>
-                  Twitter
-                </LogoLink>
-                , or{" "}
-                <Emph>
-                  <Link to="/contact">send me a message</Link>
-                </Emph>
-                .
               </p>
             </HorizontalSection>
 

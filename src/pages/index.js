@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import Helmet from "react-helmet"
+import { AiOutlineArrowRight } from "react-icons/ai"
 import ButtonLink from "../components/ButtonLink"
 import ContactFormNew from "../components/ContactFormNew"
 import { Emph, H1 } from "../components/HelperComponents"
@@ -39,10 +40,10 @@ const Index = () => {
           I am a <EmphIndex>front-end web developer</EmphIndex> based in
           Northwestern Ontario, Canada.
         </p>
-        <p className="mt-5">
+        <p className="mt-8">
           I'm currently{" "}
-          <EmphIndex className="text-4xl">looking for part time work</EmphIndex>{" "}
-          as a software developer (remote).
+          <EmphIndex className="text-4xl">looking for part-time work</EmphIndex>{" "}
+          as a front-end developer.
         </p>
         <div className="mt-8 grid">
           <ButtonLink
@@ -54,9 +55,12 @@ const Index = () => {
         </div>
       </HorizontalSection>
 
-      <HorizontalSection title="Portfolio" vertical className="mt-10">
+      <HorizontalSection title="My Work" vertical className="mt-10">
         <p className="">
-          Check out some of my <Link to="/portfolio">recent projects</Link>.
+          Check out some of my{" "}
+          <Link to="/portfolio" className="">
+            recent projects <AiOutlineArrowRight className="inline " />
+          </Link>
         </p>
       </HorizontalSection>
 

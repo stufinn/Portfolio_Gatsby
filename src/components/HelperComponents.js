@@ -18,3 +18,20 @@ export const H2 = ({ children, onClick = null, className = "" }) => (
     {children}
   </h2>
 )
+
+export const LogoLink = ({ url = "/", children }) => (
+  <Emph>
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex text-white hover:text-main  items-center"
+    >
+      {children}
+    </a>
+  </Emph>
+)
+
+export const LogoContainer = ({ children }) => (
+  <span className="inline-flex flex-col mr-1 text-3xl ">{children}</span>
+)

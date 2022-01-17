@@ -63,7 +63,7 @@ const ContactFormNew = () => {
         Submit
       </button>
       <p className="text-xl">
-        <sup>*</sup>All fields required
+        <sup>*</sup>All fields are required.
       </p>
     </form>
   )
