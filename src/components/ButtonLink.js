@@ -11,7 +11,7 @@ const ButtonLink = ({
   return (
     <Link
       to={to}
-      className={`${bgColor} ${textColor} font-semibold   w-fit px-5 pb-2 pt-1  rounded-md ${className} `}
+      className={`${bgColor} ${textColor} font-heading font-semibold w-fit px-5 pb-2 pt-1  rounded-md ${className} `}
     >
       {text}
     </Link>
