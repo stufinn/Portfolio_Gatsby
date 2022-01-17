@@ -15,6 +15,7 @@ const ContactFormNew = () => {
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       className="grid gap-y-3 text-left  w-full max-w-2xl"
+      action="/success"
     >
       {/* If this hidden input isn't included, the form won't get to where it needs to go */}
       {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
