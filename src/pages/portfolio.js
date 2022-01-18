@@ -68,6 +68,7 @@ const Portfolio = ({ data }) => {
               key={project.name}
               project={project}
               tileImage={project.imageRef}
+              builtWith={project.builtWith}
             />
           ))}
         </div>

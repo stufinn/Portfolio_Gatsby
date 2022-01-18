@@ -50,7 +50,7 @@ export default ({ project, tileImage }) => {
         <div>
           <SubTitle>Built with</SubTitle>{" "}
           <SectionText>
-            <p>GatsbyJS, React, Tailwind CSS, Shopify, Sanity CMS</p>
+            <p>{project?.builtWith}</p>
           </SectionText>
         </div>
         <div>
