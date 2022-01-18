@@ -21,7 +21,7 @@ const HorizontalSection = ({
               : "lg:border-b-0 lg:border-r-2 lg:pr-5 lg:mr-5 lg:pb-0 lg:mb-0"
           }   border-main   `}
         >
-          <h2 className={` self-start ${titleClass}`}>{title}</h2>
+          <h2 className={` self-start ${titleClass} `}>{title}</h2>
         </div>
         <div className={`items-center ${vertical ? "" : "max-w-xl"}  mb-0`}>
           {children}

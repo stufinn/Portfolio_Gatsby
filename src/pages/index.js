@@ -2,11 +2,13 @@ import { Link } from "gatsby"
 import React from "react"
 import Helmet from "react-helmet"
 import { AiOutlineArrowRight } from "react-icons/ai"
+import { AboutMeSummary } from "../components/AboutMeSummary"
 import ButtonLink from "../components/ButtonLink"
 import ContactFormNew from "../components/ContactFormNew"
 import { Emph, H1 } from "../components/HelperComponents"
 import HorizontalSection from "../components/HorizontalSection"
 import LinkButton from "../components/linkButton"
+import ProfileImage from "../components/ProfileImage"
 // import HomeContent from "../components/homeContent"
 
 // const sayHello = () =>
@@ -34,38 +36,34 @@ const Index = () => {
         {" "}
         <meta charSet="utf-8" /> <title>Stu Finn, Web Developer</title>{" "}
       </Helmet>
+      <div className="grid justify-items-center md:block">
+        {/* Profile image floats left */}
+        <ProfileImage />
+        <AboutMeSummary />
+      </div>
+      <div className="clear-both grid justify-items-center">
+        <HorizontalSection title="My Stack">
+          <p>
+            These days, my web technologies of choice are{" "}
+            <Emph> JavaScript, React, Gatsby, Node.js</Emph>, and of course{" "}
+            <Emph>HTML</Emph> and <Emph>CSS</Emph>. But it doesn’t stop there;
+            as a self-taught developer, I am always looking for ways to
+            strengthen and extend my skillset.{" "}
+          </p>
+        </HorizontalSection>
 
-      <HorizontalSection title="About Me">
-        <p>
-          I am a <EmphIndex>front-end web developer</EmphIndex> based in
-          Northwestern Ontario, Canada.
-        </p>
-        <p className="mt-8">
-          I'm currently{" "}
-          <EmphIndex className="text-4xl">looking for part-time work</EmphIndex>{" "}
-          as a front-end developer.
-        </p>
-        <div className="mt-8 grid">
-          <ButtonLink
-            to="/about"
-            text="Learn More"
-            bgColor="bg-main hover:bg-white"
-            className=" text-3xl no-underline  font-semibold  text-tertiary w-fit px-5 pb-2 pt-1 rounded-md justify-self-end"
-          />
+        <HorizontalSection title="My Work" vertical className="mt-10">
+          <p className="">
+            Check out some of my{" "}
+            <Link to="/portfolio" className="">
+              recent projects <AiOutlineArrowRight className="inline " />
+            </Link>
+          </p>
+        </HorizontalSection>
+
+        <div className="flex justify-end mt-20">
+          <ButtonLink className=" text-3xl" to="/contact" text="Contact Stu" />
         </div>
-      </HorizontalSection>
-
-      <HorizontalSection title="My Work" vertical className="mt-10">
-        <p className="">
-          Check out some of my{" "}
-          <Link to="/portfolio" className="">
-            recent projects <AiOutlineArrowRight className="inline " />
-          </Link>
-        </p>
-      </HorizontalSection>
-
-      <div className="flex justify-end mt-20">
-        <ButtonLink className=" text-3xl" to="/contact" text="Contact Stu" />
       </div>
     </div>
   )

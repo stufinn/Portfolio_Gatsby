@@ -11,6 +11,7 @@ import {
 } from "react-icons/ai"
 import { Emph, H1, H2 } from "../components/HelperComponents"
 import HorizontalSection from "../components/HorizontalSection"
+import ButtonLink from "../components/ButtonLink"
 
 const Li = ({ children }) => <li className="list-disc ml-10">{children}</li>
 
@@ -35,44 +36,8 @@ const About = ({ data }) => {
       </Helmet>
       {/* Profile photo with wrapper for gradient border */}
 
-      <div className="grid  justify-items-center md:block mt-5 md:mt-10">
-        <div className="aboutPage__borderGradientContainer aboutFloat grid  w-fit p-1 rounded-full my-6 lg:mr-5 relative   ">
-          <div className="absolute  top-0 right-0 bottom-0 left-0 bg-gradient-to-br from-main to-quaternary rounded-full animate-spin "></div>
-          <Img
-            className="aboutPage__pic rounded-full"
-            fixed={data.stuImg.edges[0].node.childImageSharp.fixed}
-            title="Stu Finn"
-            alt="Stu Finn"
-          />
-        </div>
+      <div className="grid  justify-items-center md:block ">
         <div className="aboutPage__text aboutText">
-          <div className="text-2xl max-w-6xl lg:mt-20 ">
-            <p>
-              I am a <Emph>software developer</Emph> from Ontario, Canada. I've
-              been building websites since 2017.
-            </p>{" "}
-            <p className="mt-5">
-              In 2019, I started{" "}
-              <a
-                href="https://www.borealisweb.ca"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Borealis Web Development
-              </a>
-              , a small design and development agency that is focused on
-              creating entirely custom and easy-to-use websites.{" "}
-            </p>
-            <a
-              href="#more"
-              className="mt-2 text-right text-main hover:text-white"
-            >
-              <div className="mt-5 text-right">
-                More About Stu <AiOutlineArrowDown className="inline" />
-              </div>
-            </a>
-          </div>
-
           <div className="clear-both grid lg:justify-items-center ">
             <HorizontalSection
               title="Hire Me!"
@@ -86,9 +51,27 @@ const About = ({ data }) => {
               </p>
             </HorizontalSection>
           </div>
+          <HorizontalSection title="About Me" className="clear-both mt-10">
+            <p>
+              I am a <Emph>front-end web developer</Emph> based in Northwestern
+              Ontario, Canada.
+            </p>
+            <p className="mt-8">
+              I'm currently <Emph>looking for part-time work</Emph> as a
+              front-end developer.
+            </p>
+            {/* <div className="mt-8 grid">
+              <ButtonLink
+                to="/about"
+                text="Learn More"
+                bgColor="bg-main hover:bg-white"
+                className=" text-3xl no-underline  font-semibold  text-tertiary w-fit px-5 pb-2 pt-1 rounded-md justify-self-end"
+              />
+            </div> */}
+          </HorizontalSection>
 
-          <div id="more">
-            <H2 className="mt-20 mb-0"></H2>
+          <div>
+            <H2 className=" mb-0"></H2>
             <HorizontalSection title="My Stack">
               <p>
                 These days, my web technologies of choice are{" "}
