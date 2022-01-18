@@ -112,7 +112,7 @@ const About = ({ data }) => {
                 environmental scientist, and a barista among other things. I
                 hold an undergraduate degree in Biology (minor in International
                 Development), a masters degree in Environmental Studies, and a
-                certification in Project Management. I lots of stuff!
+                professional designation in Project Management.
               </p>
             </HorizontalSection>
             <HorizontalSection title="Fun Stuff">
