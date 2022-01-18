@@ -77,7 +77,7 @@ const About = ({ data }) => {
             <HorizontalSection
               title="Hire Me!"
               vertical
-              titleClass="text-center pb-2 animate-pulse font-semibold"
+              titleClass="text-center pb-2 font-semibold text-main"
               className="max-w-4xl"
             >
               <p>
