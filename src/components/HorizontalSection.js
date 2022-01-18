@@ -10,9 +10,7 @@ const HorizontalSection = ({
   return (
     <div className={`flex justify-stretch ${className}`}>
       <div
-        className={`flex flex-col ${
-          vertical ? "" : "lg:flex-row"
-        }  mt-10 width-full`}
+        className={`flex flex-col ${vertical ? "" : "lg:flex-row"}  width-full`}
       >
         <div
           className={`grid pb-1 mb-3 border-b-2 ${
@@ -21,7 +19,7 @@ const HorizontalSection = ({
               : "lg:border-b-0 lg:border-r-2 lg:pr-5 lg:mr-5 lg:pb-0 lg:mb-0"
           }   border-main   `}
         >
-          <h2 className={` self-start ${titleClass} `}>{title}</h2>
+          <h2 className={` self-start ${titleClass} text-main `}>{title}</h2>
         </div>
         <div className={`items-center ${vertical ? "" : "max-w-xl"}  mb-0`}>
           {children}

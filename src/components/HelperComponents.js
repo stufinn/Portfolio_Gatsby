@@ -1,7 +1,7 @@
 import React from "react"
 
 export const Emph = ({ children, className = "" }) => (
-  <span className={`text-main text-3xl ${className}`}>{children}</span>
+  <span className={`text-main ${className}`}>{children}</span>
 )
 
 export const H1 = ({ children, className = "" }) => (
@@ -36,12 +36,17 @@ export const LogoContainer = ({ children }) => (
   <span className="inline-flex flex-col mr-1 text-3xl ">{children}</span>
 )
 
-export const TextLink = ({ text, url }) => (
+export const TextLink = ({
+  text,
+  url,
+  className = "",
+  linkColor = "text-main hover:text-secondary",
+}) => (
   <a
     href={url}
     target="_blank"
     rel="noopener noreferrer"
-    className="text-main underline hover:text-secondary"
+    className={` underline ${linkColor} `}
   >
     {text}
   </a>

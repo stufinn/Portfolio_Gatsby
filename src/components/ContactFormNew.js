@@ -37,14 +37,14 @@ const ContactFormNew = () => {
           name="name"
           placeholder="Your name"
           required
-          className="pl-1"
+          className="pl-1 shadow-lg shadow-neutral-900"
         />
       </Label>
       <Label text="">
         <input
           type="email"
           name="email"
-          className="pl-1"
+          className="pl-1 shadow-lg shadow-neutral-900"
           required
           placeholder="Your email"
         />
@@ -54,12 +54,12 @@ const ContactFormNew = () => {
           name="message"
           required
           placeholder="Your Message"
-          className="pl-1"
+          className="pl-1 shadow-lg shadow-neutral-900"
         ></textarea>
       </Label>
       <button
         type="submit"
-        className="bg-main hover:bg-white font-semibold  text-tertiary mt-5 w-fit px-5 pb-2 pt-1 justify-self-end rounded-md "
+        className="bg-main hover:bg-white font-semibold  text-tertiary mt-5 w-fit px-5 pb-2 pt-1 justify-self-end rounded-md shadow-lg shadow-neutral-900 "
       >
         Submit
       </button>

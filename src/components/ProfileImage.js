@@ -20,7 +20,7 @@ const ProfileImage = ({ className = "" }) => {
   `)
   return (
     <div
-      className={`aboutFloat grid  w-fit p-1 rounded-full my-6 md:mr-5 relative ${className}`}
+      className={`aboutFloat grid  w-fit p-1 rounded-full my-6 md:mr-5 relative shadow-lg shadow-neutral-900 ${className}`}
     >
       <div className="absolute  top-0 right-0 bottom-0 left-0 bg-gradient-to-br from-main to-quaternary rounded-full animate-spin "></div>
       <Img

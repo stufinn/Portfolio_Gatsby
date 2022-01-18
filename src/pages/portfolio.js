@@ -9,6 +9,30 @@ const Portfolio = ({ data }) => {
 
   const projects = [
     {
+      name: "Borealis Web Development",
+      link: "https://www.borealisweb.ca",
+      builtWith: "GatsbyJS, React, Tailwind CSS",
+      projectDescription: null,
+      imageRef: data.borealisImg,
+      design: {},
+    },
+    {
+      name: (
+        <span>
+          Art + Science Physiotherapy and Pilates{" "}
+          <span className="italic">(coming&nbsp;soon)</span>
+        </span>
+      ),
+      link: null,
+      builtWith: "GatsbyJS, React, Tailwind CSS, Sanity CMS",
+      projectDescription: null,
+      imageRef: data.ArtSciImg,
+      design: {
+        by: "Ris",
+        url: "https://imaginarybeasts.net/",
+      },
+    },
+    {
       name: "The Hub Roastery",
       link: "https://www.thehubroastery.ca",
       builtWith: "GatsbyJS, React, Tailwind CSS, Shopify, Sanity CMS",
@@ -60,7 +84,7 @@ const Portfolio = ({ data }) => {
       </Helmet>
       <div className="mx-5">
         <h1 className="projectsTitle text-center text-5xl md:text-6xl mt-7 md:mt-0">
-          Recent Client Projects
+          Recent Projects
         </h1>
         <div className="projects grid grid-cols-1  gap-y-12 gap-x-11 mt-12 max-w-3xl">
           {projects.map(project => (
@@ -148,6 +172,18 @@ export const pageQuery = graphql`
       }
     }
     WINKSYouthImg: file(relativePath: { eq: "images/projects/WINKS.png" }) {
+      id
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED)
+      }
+    }
+    borealisImg: file(relativePath: { eq: "images/projects/Borealis.png" }) {
+      id
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED)
+      }
+    }
+    ArtSciImg: file(relativePath: { eq: "images/projects/ArtAndScience.png" }) {
       id
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED)

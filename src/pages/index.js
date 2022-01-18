@@ -8,6 +8,7 @@ import ContactFormNew from "../components/ContactFormNew"
 import { Emph, H1 } from "../components/HelperComponents"
 import HorizontalSection from "../components/HorizontalSection"
 import LinkButton from "../components/linkButton"
+import MyStack from "../components/MyStack"
 import ProfileImage from "../components/ProfileImage"
 // import HomeContent from "../components/homeContent"
 
@@ -31,7 +32,7 @@ const TextContainer = ({ children, title = "" }) => (
 
 const Index = () => {
   return (
-    <div className="text-3xl md:text-4xl mx-2">
+    <div className="text-2xl md:text-3xl mx-3">
       <Helmet>
         {" "}
         <meta charSet="utf-8" /> <title>Stu Finn, Web Developer</title>{" "}
@@ -39,25 +40,22 @@ const Index = () => {
       <div className="grid justify-items-center md:block">
         {/* Profile image floats left */}
         <ProfileImage />
-        <AboutMeSummary />
+        <AboutMeSummary moreLink className="text-center md:text-left" />
       </div>
       <div className="clear-both grid justify-items-center">
-        <HorizontalSection title="My Stack">
-          <p>
-            These days, my web technologies of choice are{" "}
-            <Emph> JavaScript, React, Gatsby, Node.js</Emph>, and of course{" "}
-            <Emph>HTML</Emph> and <Emph>CSS</Emph>. But it doesn’t stop there;
-            as a self-taught developer, I am always looking for ways to
-            strengthen and extend my skillset.{" "}
-          </p>
-        </HorizontalSection>
+        <MyStack className="mt-10" />
 
-        <HorizontalSection title="My Work" vertical className="mt-10">
+        <HorizontalSection
+          title="My Work"
+          vertical
+          className="mt-10 justify-self-stretch md:justify-self-center"
+        >
           <p className="">
             Check out some of my{" "}
             <Link to="/portfolio" className="">
-              recent projects <AiOutlineArrowRight className="inline " />
+              recent projects
             </Link>
+            .
           </p>
         </HorizontalSection>
 

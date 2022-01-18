@@ -12,6 +12,8 @@ import {
 import { Emph, H1, H2 } from "../components/HelperComponents"
 import HorizontalSection from "../components/HorizontalSection"
 import ButtonLink from "../components/ButtonLink"
+import { AboutMeSummary } from "../components/AboutMeSummary"
+import MyStack from "../components/MyStack"
 
 const Li = ({ children }) => <li className="list-disc ml-10">{children}</li>
 
@@ -29,7 +31,7 @@ const LogoLink = ({ url = "/", children }) => (
 
 const About = ({ data }) => {
   return (
-    <div className="aboutPage flex flex-col items-center mx-3 text-2xl max-w-7xl">
+    <div className="aboutPage flex flex-col items-center mx-3 mt-5 md:mt-0 text-2xl max-w-7xl">
       <Helmet>
         <meta charSet="utf-8" />
         <title>About Stu Finn</title>{" "}
@@ -40,9 +42,13 @@ const About = ({ data }) => {
         <div className="aboutPage__text aboutText">
           <div className="clear-both grid lg:justify-items-center ">
             <HorizontalSection
-              title="Hire Me!"
+              title={
+                <span>
+                  <span className="">Hire</span> Me
+                </span>
+              }
               vertical
-              titleClass="text-center pb-2 font-semibold text-main"
+              titleClass="text-center text-white pb-2 font-semibold text-main"
               className="max-w-4xl"
             >
               <p>
@@ -51,16 +57,10 @@ const About = ({ data }) => {
               </p>
             </HorizontalSection>
           </div>
-          <HorizontalSection title="About Me" className="clear-both mt-10">
-            <p>
-              I am a <Emph>front-end web developer</Emph> based in Northwestern
-              Ontario, Canada.
-            </p>
-            <p className="mt-8">
-              I'm currently <Emph>looking for part-time work</Emph> as a
-              front-end developer.
-            </p>
-            {/* <div className="mt-8 grid">
+          <div className="grid gap-y-10">
+            <HorizontalSection title="About Me" className=" mt-16">
+              <AboutMeSummary className="pt-0" />
+              {/* <div className="mt-8 grid">
               <ButtonLink
                 to="/about"
                 text="Learn More"
@@ -68,19 +68,9 @@ const About = ({ data }) => {
                 className=" text-3xl no-underline  font-semibold  text-tertiary w-fit px-5 pb-2 pt-1 rounded-md justify-self-end"
               />
             </div> */}
-          </HorizontalSection>
-
-          <div>
-            <H2 className=" mb-0"></H2>
-            <HorizontalSection title="My Stack">
-              <p>
-                These days, my web technologies of choice are{" "}
-                <Emph> JavaScript, React, Gatsby, Node.js</Emph>, and of course{" "}
-                <Emph>HTML</Emph> and <Emph>CSS</Emph>. But it doesn’t stop
-                there; as a self-taught developer, I am always looking for ways
-                to strengthen and extend my skillset.{" "}
-              </p>
             </HorizontalSection>
+
+            <MyStack />
             <HorizontalSection
               title={
                 <span>
@@ -92,10 +82,12 @@ const About = ({ data }) => {
               <p>
                 Before to becoming a full time developer in 2018, I was
                 alternately a project manager, a museum curator, an
-                environmental scientist, and a barista among other things. I
-                hold an undergraduate degree in Biology (minor in International
-                Development), a masters degree in Environmental Studies, and a
-                professional designation in Project Management.
+                environmental scientist, and a barista among other things.
+              </p>
+              <p>
+                I have an undergraduate degree in Biology (minor in
+                International Development), a masters degree in Environmental
+                Studies, and a professional designation in Project Management.
               </p>
             </HorizontalSection>
             <HorizontalSection title="Fun Stuff">
@@ -106,7 +98,7 @@ const About = ({ data }) => {
                 in the nearby woods camping, biking, or skiing.
               </p>
               <div className="ml-5">
-                <h3 className="text-white font-thin text-4xl mt-5 mb-3">
+                <h3 className="text-main font-thin text-4xl mt-5 mb-3">
                   Fun Facts
                 </h3>
                 <ul className="mb-5 grid gap-y-2">
