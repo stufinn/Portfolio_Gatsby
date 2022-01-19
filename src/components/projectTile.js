@@ -42,21 +42,21 @@ export default ({ project, tileImage }) => {
           <TextLink text={project.design.by} url={project.design.url} />
         </div> */}
         {project.description ? (
-          <div>
+          <div className="flex flex-col md:flex-row">
             <SubTitle>Project Description</SubTitle>
             <SectionText>
               <p>{project?.description}</p>
             </SectionText>
           </div>
         ) : null}
-        <div className="flex">
+        <div className="flex flex-col md:flex-row">
           <SubTitle>Built with:</SubTitle>{" "}
           <SectionText>
             <p className="mb-0">{project?.builtWith}</p>
           </SectionText>
         </div>
         {project?.link && (
-          <div className="flex">
+          <div className="flex flex-col md:flex-row">
             <SubTitle>Website:</SubTitle>
             <SectionText>
               <TextLink
