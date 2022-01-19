@@ -40,7 +40,7 @@ const Index = () => {
       <div className="grid justify-items-center md:block">
         {/* Profile image floats left */}
         <ProfileImage />
-        <h1 className="text-5xl md:text-6xl">Hey! 👋</h1>
+        <h1 className="text-5xl md:text-6xl">Hello! 👋</h1>
         <AboutMeSummary
           moreLink
           lookingForWork
