@@ -25,7 +25,7 @@ export const LogoLink = ({ url = "/", children }) => (
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex text-white hover:text-main  items-center"
+      className="flex text-main hover:text-white  items-center"
     >
       {children}
     </a>

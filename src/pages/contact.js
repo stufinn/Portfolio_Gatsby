@@ -16,17 +16,22 @@ const Contact = ({ data }) => (
       {" "}
       <meta charSet="utf-8" /> <title>Contact</title>{" "}
     </Helmet>
-    <div className=" grid mt-8 md:mt-0">
+    <div className=" grid mt-8 md:mt-0 text-3xl">
       <H1 className="projectsTitle text-center">Let's Connect</H1>
-      <div className="mt-10 text-3xl flex items-end justify-self-center text-white underline hover:text-main">
+      <div className="mt-10  flex items-end justify-self-center text-main underline hover:text-white">
         <AiFillPhone className="mr-2" />
-        <a href="tel:+18072200856" className=" justify-self-center ">
+        <a
+          href="tel:+18072200856"
+          className="text-main hover:text-white justify-self-center "
+        >
           (807) 220-0856
         </a>
       </div>
       <Social className="mt-10" />
       <div className="contactPage grid gap-y-5 mt-5 text-center">
-        <H2 className="text-4xl text-left">Send Me a Message</H2>
+        <H2 className="text-4xl  text-center  text-white max-w-sm md:max-w-xl">
+          Or Send Me a Message:
+        </H2>
         <div className="grid justify-items-center text-3xl">
           <ContactFormNew />
         </div>

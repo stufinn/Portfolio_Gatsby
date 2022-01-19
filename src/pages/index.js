@@ -40,7 +40,12 @@ const Index = () => {
       <div className="grid justify-items-center md:block">
         {/* Profile image floats left */}
         <ProfileImage />
-        <AboutMeSummary moreLink className="text-center md:text-left" />
+        <h1 className="text-5xl md:text-6xl">Hey! 👋</h1>
+        <AboutMeSummary
+          moreLink
+          lookingForWork
+          className="text-center md:text-left"
+        />
       </div>
       <div className="clear-both grid justify-items-center">
         <MyStack className="mt-10" />
@@ -60,7 +65,7 @@ const Index = () => {
         </HorizontalSection>
 
         <div className="flex justify-end mt-20">
-          <ButtonLink className=" text-3xl" to="/contact" text="Contact Stu" />
+          <ButtonLink className=" text-3xl" to="/contact" text="Contact Me" />
         </div>
       </div>
     </div>

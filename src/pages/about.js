@@ -44,7 +44,7 @@ const About = ({ data }) => {
             <HorizontalSection
               title={
                 <span>
-                  <span className="">Hire</span> Me
+                  <span className="">Hire</span> Me!
                 </span>
               }
               vertical
@@ -59,7 +59,7 @@ const About = ({ data }) => {
           </div>
           <div className="grid gap-y-10">
             <HorizontalSection title="About Me" className=" mt-16">
-              <AboutMeSummary className="pt-0" />
+              <AboutMeSummary className="pt-0 md:pt-0" />
               {/* <div className="mt-8 grid">
               <ButtonLink
                 to="/about"

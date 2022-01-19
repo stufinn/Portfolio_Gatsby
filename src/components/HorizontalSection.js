@@ -21,7 +21,11 @@ const HorizontalSection = ({
         >
           <h2 className={` self-start ${titleClass} text-main `}>{title}</h2>
         </div>
-        <div className={`items-center ${vertical ? "" : "max-w-xl"}  mb-0`}>
+        <div
+          className={`grid gap-y-3 md:gap-y-5 ${
+            vertical ? "" : "max-w-xl"
+          }  mb-0`}
+        >
           {children}
         </div>
       </div>

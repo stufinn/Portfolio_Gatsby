@@ -3,16 +3,22 @@ import React from "react"
 import { AiOutlineArrowDown, AiOutlineArrowRight } from "react-icons/ai"
 import { Emph } from "./HelperComponents"
 
-export const AboutMeSummary = ({ className = "", moreLink = false }) => {
+export const AboutMeSummary = ({
+  className = "",
+  moreLink = false,
+  lookingForWork = false,
+}) => {
   return (
     <div className={` max-w-6xl pt-5 md:pt-12 ${className}`}>
       <p>
-        I am a <Emph>software developer</Emph> from Ontario, Canada.
+        I'm a <Emph>software developer</Emph> from Ontario, Canada.
       </p>
-      <p className="mt-5">
-        Currently, I'm <Emph>looking for part-time work</Emph> as a front-end
-        developer.
-      </p>
+      {lookingForWork && (
+        <p className="mt-5">
+          Currently, I'm <Emph>looking for part-time work</Emph> as a front-end
+          developer.
+        </p>
+      )}
       <p className="mt-5">
         I've been building websites since 2017 and in 2019, I started{" "}
         <a
